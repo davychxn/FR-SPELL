@@ -1,0 +1,702 @@
+[
+  {
+    "lemma": "pompéien",
+    "person": "THD_PLF",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "pompéiennes"
+  },
+  {
+    "lemma": "illuminé",
+    "person": "THD_M",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "illuminé"
+  },
+  {
+    "lemma": "blanchissant",
+    "person": "THD_M",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "blanchissant"
+  },
+  {
+    "lemma": "mobilier",
+    "person": "THD_PLM",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "mobiliers"
+  },
+  {
+    "lemma": "libidinal",
+    "person": "THD_F",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "libidinale"
+  },
+  {
+    "lemma": "tranquillisant",
+    "person": "THD_M",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "tranquillisant"
+  },
+  {
+    "lemma": "déplaisant",
+    "person": "THD_F",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "déplaisante"
+  },
+  {
+    "lemma": "méchant",
+    "person": "THD_PLF",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "méchantes"
+  },
+  {
+    "lemma": "narratif",
+    "person": "THD_PLF",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "narratives"
+  },
+  {
+    "lemma": "médiéval",
+    "person": "THD_PLM",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "médiévaux"
+  },
+  {
+    "lemma": "différent",
+    "person": "THD_M",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "différent"
+  },
+  {
+    "lemma": "divorcé",
+    "person": "THD_M",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "divorcé"
+  },
+  {
+    "lemma": "modéré",
+    "person": "THD_F",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "modérée"
+  },
+  {
+    "lemma": "détenu",
+    "person": "THD_F",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "détenue"
+  },
+  {
+    "lemma": "dissolvant",
+    "person": "THD_PLF",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "dissolvantes"
+  },
+  {
+    "lemma": "luminescent",
+    "person": "THD_F",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "luminescente"
+  },
+  {
+    "lemma": "exceptionnel",
+    "person": "THD_M",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "exceptionnel"
+  },
+  {
+    "lemma": "compréhensif",
+    "person": "THD_PLF",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "compréhensives"
+  },
+  {
+    "lemma": "costaud",
+    "person": "THD_F",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "costaude"
+  },
+  {
+    "lemma": "privatif",
+    "person": "THD_M",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "privatif"
+  },
+  {
+    "lemma": "secret",
+    "person": "THD_F",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "secrète"
+  },
+  {
+    "lemma": "dimensionnel",
+    "person": "THD_M",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "dimensionnel"
+  },
+  {
+    "lemma": "catalan",
+    "person": "THD_PLM",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "catalans"
+  },
+  {
+    "lemma": "récurrent",
+    "person": "THD_M",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "récurrent"
+  },
+  {
+    "lemma": "dégradant",
+    "person": "THD_M",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "dégradant"
+  },
+  {
+    "lemma": "protestant",
+    "person": "THD_M",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "protestant"
+  },
+  {
+    "lemma": "fureteur",
+    "person": "THD_M",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "fureteur"
+  },
+  {
+    "lemma": "tombant",
+    "person": "THD_F",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "tombante"
+  },
+  {
+    "lemma": "fictif",
+    "person": "THD_M",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "fictif"
+  },
+  {
+    "lemma": "douillet",
+    "person": "THD_M",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "douillet"
+  },
+  {
+    "lemma": "familier",
+    "person": "THD_F",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "familière"
+  },
+  {
+    "lemma": "déférent",
+    "person": "THD_PLM",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "déférents"
+  },
+  {
+    "lemma": "doré",
+    "person": "THD_M",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "doré"
+  },
+  {
+    "lemma": "indéfini",
+    "person": "THD_M",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "indéfini"
+  },
+  {
+    "lemma": "cassant",
+    "person": "THD_PLF",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "cassantes"
+  },
+  {
+    "lemma": "inspirant",
+    "person": "THD_M",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "inspirant"
+  },
+  {
+    "lemma": "géorgien",
+    "person": "THD_M",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "géorgien"
+  },
+  {
+    "lemma": "intestinal",
+    "person": "THD_M",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "intestinal"
+  },
+  {
+    "lemma": "marchand",
+    "person": "THD_PLF",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "marchandes"
+  },
+  {
+    "lemma": "tortu",
+    "person": "THD_PLF",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "tortues"
+  },
+  {
+    "lemma": "marocain",
+    "person": "THD_PLF",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "marocaines"
+  },
+  {
+    "lemma": "familier",
+    "person": "THD_PLF",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "familières"
+  },
+  {
+    "lemma": "navrant",
+    "person": "THD_M",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "navrant"
+  },
+  {
+    "lemma": "trivial",
+    "person": "THD_PLF",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "triviales"
+  },
+  {
+    "lemma": "profond",
+    "person": "THD_M",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "profond"
+  },
+  {
+    "lemma": "principal",
+    "person": "THD_PLM",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "principaux"
+  },
+  {
+    "lemma": "moyen",
+    "person": "THD_M",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "moyen"
+  },
+  {
+    "lemma": "seyant",
+    "person": "THD_M",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "seyant"
+  },
+  {
+    "lemma": "inférieur",
+    "person": "THD_M",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "inférieur"
+  },
+  {
+    "lemma": "bref",
+    "person": "THD_PLF",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "brèves"
+  },
+  {
+    "lemma": "inaperçu",
+    "person": "THD_PLF",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "inaperçues"
+  },
+  {
+    "lemma": "sec",
+    "person": "THD_PLM",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "secs"
+  },
+  {
+    "lemma": "marié",
+    "person": "THD_F",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "mariée"
+  },
+  {
+    "lemma": "odorant",
+    "person": "THD_PLM",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "odorants"
+  },
+  {
+    "lemma": "accidentel",
+    "person": "THD_PLM",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "accidentels"
+  },
+  {
+    "lemma": "dépendant",
+    "person": "THD_PLM",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "dépendants"
+  },
+  {
+    "lemma": "administratif",
+    "person": "THD_M",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "administratif"
+  },
+  {
+    "lemma": "inférieur",
+    "person": "THD_PLF",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "inférieures"
+  },
+  {
+    "lemma": "guinéen",
+    "person": "THD_PLM",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "guinéens"
+  },
+  {
+    "lemma": "sortant",
+    "person": "THD_M",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "sortant"
+  },
+  {
+    "lemma": "efficient",
+    "person": "THD_F",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "efficiente"
+  },
+  {
+    "lemma": "impressionnant",
+    "person": "THD_M",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "impressionnant"
+  },
+  {
+    "lemma": "tournoyant",
+    "person": "THD_F",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "tournoyante"
+  },
+  {
+    "lemma": "londonien",
+    "person": "THD_PLM",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "londoniens"
+  },
+  {
+    "lemma": "immatériel",
+    "person": "THD_M",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "immatériel"
+  },
+  {
+    "lemma": "inexpliqué",
+    "person": "THD_F",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "inexpliquée"
+  },
+  {
+    "lemma": "tentateur",
+    "person": "THD_F",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "tentatrice"
+  },
+  {
+    "lemma": "dévot",
+    "person": "THD_F",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "dévote"
+  },
+  {
+    "lemma": "orphelin",
+    "person": "THD_F",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "orpheline"
+  },
+  {
+    "lemma": "net",
+    "person": "THD_M",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "net"
+  },
+  {
+    "lemma": "agressif",
+    "person": "THD_PLF",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "agressives"
+  },
+  {
+    "lemma": "aigri",
+    "person": "THD_PLF",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "aigries"
+  },
+  {
+    "lemma": "vietnamien",
+    "person": "THD_PLM",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "vietnamiens"
+  },
+  {
+    "lemma": "débordant",
+    "person": "THD_PLM",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "débordants"
+  },
+  {
+    "lemma": "spécial",
+    "person": "THD_PLM",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "spéciaux"
+  },
+  {
+    "lemma": "abdominal",
+    "person": "THD_PLF",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "abdominales"
+  },
+  {
+    "lemma": "brouillon",
+    "person": "THD_PLM",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "brouillons"
+  },
+  {
+    "lemma": "masculin",
+    "person": "THD_PLF",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "masculines"
+  },
+  {
+    "lemma": "flicard",
+    "person": "THD_PLM",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "flicards"
+  },
+  {
+    "lemma": "exclusif",
+    "person": "THD_PLF",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "exclusives"
+  },
+  {
+    "lemma": "éblouissant",
+    "person": "THD_PLF",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "éblouissantes"
+  },
+  {
+    "lemma": "poussif",
+    "person": "THD_M",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "poussif"
+  },
+  {
+    "lemma": "enchaîné",
+    "person": "THD_PLF",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "enchaînées"
+  },
+  {
+    "lemma": "caractériel",
+    "person": "THD_F",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "caractérielle"
+  },
+  {
+    "lemma": "protestant",
+    "person": "THD_PLM",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "protestants"
+  },
+  {
+    "lemma": "ragoûtant",
+    "person": "THD_PLF",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "ragoûtantes"
+  },
+  {
+    "lemma": "maigrelet",
+    "person": "THD_PLM",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "maigrelets"
+  },
+  {
+    "lemma": "ingrat",
+    "person": "THD_PLM",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "ingrats"
+  },
+  {
+    "lemma": "tropical",
+    "person": "THD_PLM",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "tropicaux"
+  },
+  {
+    "lemma": "barbant",
+    "person": "THD_PLM",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "barbants"
+  },
+  {
+    "lemma": "sculptural",
+    "person": "THD_PLF",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "sculpturales"
+  },
+  {
+    "lemma": "musical",
+    "person": "THD_M",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "musical"
+  },
+  {
+    "lemma": "couvert",
+    "person": "THD_F",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "couverte"
+  },
+  {
+    "lemma": "inviolé",
+    "person": "THD_PLF",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "inviolées"
+  },
+  {
+    "lemma": "torturant",
+    "person": "THD_M",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "torturant"
+  },
+  {
+    "lemma": "exaltant",
+    "person": "THD_PLF",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "exaltantes"
+  },
+  {
+    "lemma": "invité",
+    "person": "THD_PLF",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "invitées"
+  },
+  {
+    "lemma": "buccal",
+    "person": "THD_F",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "buccale"
+  },
+  {
+    "lemma": "unilatéral",
+    "person": "THD_M",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "unilatéral"
+  },
+  {
+    "lemma": "indiscret",
+    "person": "THD_PLM",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "indiscrets"
+  }
+]

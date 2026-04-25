@@ -1,0 +1,702 @@
+[
+  {
+    "lemma": "anglican",
+    "person": "THD_M",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "anglican"
+  },
+  {
+    "lemma": "truand",
+    "person": "THD_F",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "truande"
+  },
+  {
+    "lemma": "intéressant",
+    "person": "THD_PLF",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "intéressantes"
+  },
+  {
+    "lemma": "négociant",
+    "person": "THD_M",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "négociant"
+  },
+  {
+    "lemma": "causeur",
+    "person": "THD_PLF",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "causeuses"
+  },
+  {
+    "lemma": "age",
+    "person": "THD_M",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "age"
+  },
+  {
+    "lemma": "résistant",
+    "person": "THD_F",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "résistante"
+  },
+  {
+    "lemma": "analysé",
+    "person": "THD_F",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "analysée"
+  },
+  {
+    "lemma": "habitué",
+    "person": "THD_PLM",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "habitués"
+  },
+  {
+    "lemma": "admissible",
+    "person": "ALL",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "admissible"
+  },
+  {
+    "lemma": "chasseur",
+    "person": "THD_F",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "chasseuse"
+  },
+  {
+    "lemma": "bolivien",
+    "person": "THD_M",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "bolivien"
+  },
+  {
+    "lemma": "arrivant",
+    "person": "THD_PLM",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "arrivants"
+  },
+  {
+    "lemma": "élégant",
+    "person": "THD_F",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "élégante"
+  },
+  {
+    "lemma": "petit",
+    "person": "THD_PLM",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "petits"
+  },
+  {
+    "lemma": "gobeur",
+    "person": "THD_M",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "gobeur"
+  },
+  {
+    "lemma": "suivant",
+    "person": "THD_PLM",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "suivants"
+  },
+  {
+    "lemma": "aigri",
+    "person": "THD_PLM",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "aigris"
+  },
+  {
+    "lemma": "causeur",
+    "person": "THD_PLM",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "causeurs"
+  },
+  {
+    "lemma": "mourant",
+    "person": "THD_F",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "mourante"
+  },
+  {
+    "lemma": "traqueur",
+    "person": "THD_M",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "traqueur"
+  },
+  {
+    "lemma": "diplômé",
+    "person": "THD_PLF",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "diplômées"
+  },
+  {
+    "lemma": "absent",
+    "person": "THD_PLF",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "absentes"
+  },
+  {
+    "lemma": "boutiquier",
+    "person": "THD_PLF",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "boutiquières"
+  },
+  {
+    "lemma": "panetier",
+    "person": "THD_PLF",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "panetières"
+  },
+  {
+    "lemma": "receleur",
+    "person": "THD_PLF",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "receleuses"
+  },
+  {
+    "lemma": "villageois",
+    "person": "THD_PLF",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "villageoises"
+  },
+  {
+    "lemma": "affleurement",
+    "person": "THD_M",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "affleurement"
+  },
+  {
+    "lemma": "polisseur",
+    "person": "THD_M",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "polisseur"
+  },
+  {
+    "lemma": "habitué",
+    "person": "THD_M",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "habitué"
+  },
+  {
+    "lemma": "ami",
+    "person": "THD_F",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "amie"
+  },
+  {
+    "lemma": "loueur",
+    "person": "THD_PLM",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "loueurs"
+  },
+  {
+    "lemma": "aplomb",
+    "person": "THD_M",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "aplomb"
+  },
+  {
+    "lemma": "accastillage",
+    "person": "THD_M",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "accastillage"
+  },
+  {
+    "lemma": "flemmard",
+    "person": "THD_PLM",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "flemmards"
+  },
+  {
+    "lemma": "envoyé",
+    "person": "THD_PLM",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "envoyés"
+  },
+  {
+    "lemma": "dénicheur",
+    "person": "THD_M",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "dénicheur"
+  },
+  {
+    "lemma": "brûlé",
+    "person": "THD_PLF",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "brûlées"
+  },
+  {
+    "lemma": "amphétamine",
+    "person": "THD_PLF",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "amphétamines"
+  },
+  {
+    "lemma": "démolisseur",
+    "person": "THD_PLM",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "démolisseurs"
+  },
+  {
+    "lemma": "archipel",
+    "person": "THD_M",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "archipel"
+  },
+  {
+    "lemma": "génois",
+    "person": "ALL",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "génois"
+  },
+  {
+    "lemma": "fumeur",
+    "person": "THD_PLF",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "fumeuses"
+  },
+  {
+    "lemma": "dévergondé",
+    "person": "THD_F",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "dévergondée"
+  },
+  {
+    "lemma": "alluvion",
+    "person": "THD_F",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "alluvion"
+  },
+  {
+    "lemma": "antienne",
+    "person": "THD_F",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "antienne"
+  },
+  {
+    "lemma": "maquilleur",
+    "person": "THD_M",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "maquilleur"
+  },
+  {
+    "lemma": "mystificateur",
+    "person": "THD_M",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "mystificateur"
+  },
+  {
+    "lemma": "alpage",
+    "person": "THD_PLM",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "alpages"
+  },
+  {
+    "lemma": "séducteur",
+    "person": "THD_PLF",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "séductrices"
+  },
+  {
+    "lemma": "terrien",
+    "person": "THD_PLF",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "terriennes"
+  },
+  {
+    "lemma": "obstétricien",
+    "person": "THD_M",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "obstétricien"
+  },
+  {
+    "lemma": "chiqueur",
+    "person": "THD_PLF",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "chiqueuses"
+  },
+  {
+    "lemma": "américain",
+    "person": "THD_M",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "américain"
+  },
+  {
+    "lemma": "producteur",
+    "person": "THD_M",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "producteur"
+  },
+  {
+    "lemma": "pédant",
+    "person": "THD_PLM",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "pédants"
+  },
+  {
+    "lemma": "mendiant",
+    "person": "THD_PLF",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "mendiantes"
+  },
+  {
+    "lemma": "snobinard",
+    "person": "THD_PLF",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "snobinardes"
+  },
+  {
+    "lemma": "angine",
+    "person": "THD_PLF",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "angines"
+  },
+  {
+    "lemma": "lourd",
+    "person": "THD_PLM",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "lourds"
+  },
+  {
+    "lemma": "prochain",
+    "person": "THD_PLM",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "prochains"
+  },
+  {
+    "lemma": "constituant",
+    "person": "THD_F",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "constituante"
+  },
+  {
+    "lemma": "appelant",
+    "person": "THD_M",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "appelant"
+  },
+  {
+    "lemma": "banlieusard",
+    "person": "THD_F",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "banlieusarde"
+  },
+  {
+    "lemma": "approbation",
+    "person": "THD_F",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "approbation"
+  },
+  {
+    "lemma": "passager",
+    "person": "THD_M",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "passager"
+  },
+  {
+    "lemma": "travailleur",
+    "person": "THD_PLF",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "travailleuses"
+  },
+  {
+    "lemma": "promoteur",
+    "person": "THD_PLM",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "promoteurs"
+  },
+  {
+    "lemma": "allumé",
+    "person": "THD_PLM",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "allumés"
+  },
+  {
+    "lemma": "appareil",
+    "person": "THD_M",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "appareil"
+  },
+  {
+    "lemma": "républicain",
+    "person": "THD_M",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "républicain"
+  },
+  {
+    "lemma": "approche",
+    "person": "THD_PLF",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "approches"
+  },
+  {
+    "lemma": "anorexie",
+    "person": "THD_PLF",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "anorexies"
+  },
+  {
+    "lemma": "détraqué",
+    "person": "THD_PLF",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "détraquées"
+  },
+  {
+    "lemma": "amerloque",
+    "person": "ALL",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "amerloque"
+  },
+  {
+    "lemma": "compétiteur",
+    "person": "THD_M",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "compétiteur"
+  },
+  {
+    "lemma": "allergie",
+    "person": "THD_F",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "allergie"
+  },
+  {
+    "lemma": "surveillant",
+    "person": "THD_F",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "surveillante"
+  },
+  {
+    "lemma": "cuissard",
+    "person": "THD_PLM",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "cuissards"
+  },
+  {
+    "lemma": "ambitieux",
+    "person": "THD_F",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "ambitieuse"
+  },
+  {
+    "lemma": "apôtre",
+    "person": "THD_PLM",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "apôtres"
+  },
+  {
+    "lemma": "inconditionnel",
+    "person": "THD_F",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "inconditionnelle"
+  },
+  {
+    "lemma": "alpe",
+    "person": "THD_PLF",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "alpes"
+  },
+  {
+    "lemma": "communal",
+    "person": "THD_M",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "communal"
+  },
+  {
+    "lemma": "pochard",
+    "person": "THD_PLM",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "pochards"
+  },
+  {
+    "lemma": "daron",
+    "person": "THD_F",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "daronne"
+  },
+  {
+    "lemma": "arc",
+    "person": "THD_M",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "arc"
+  },
+  {
+    "lemma": "pervers",
+    "person": "THD_PLF",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "perverses"
+  },
+  {
+    "lemma": "accommodement",
+    "person": "THD_PLM",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "accommodements"
+  },
+  {
+    "lemma": "boursier",
+    "person": "THD_M",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "boursier"
+  },
+  {
+    "lemma": "seul",
+    "person": "THD_PLF",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "seules"
+  },
+  {
+    "lemma": "coucheur",
+    "person": "THD_M",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "coucheur"
+  },
+  {
+    "lemma": "randonneur",
+    "person": "THD_PLM",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "randonneurs"
+  },
+  {
+    "lemma": "taulard",
+    "person": "THD_PLF",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "taulardes"
+  },
+  {
+    "lemma": "receveur",
+    "person": "THD_M",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "receveur"
+  },
+  {
+    "lemma": "arachnoïde",
+    "person": "THD_PLF",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "arachnoïdes"
+  },
+  {
+    "lemma": "gamin",
+    "person": "THD_M",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "gamin"
+  },
+  {
+    "lemma": "ambition",
+    "person": "THD_PLF",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "ambitions"
+  },
+  {
+    "lemma": "aptitude",
+    "person": "THD_PLF",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "aptitudes"
+  },
+  {
+    "lemma": "abonnement",
+    "person": "THD_M",
+    "mode": "ALL",
+    "tense": "ALL",
+    "target": "abonnement"
+  }
+]

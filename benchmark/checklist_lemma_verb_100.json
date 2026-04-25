@@ -1,0 +1,402 @@
+[
+  {
+    "input": "boudinant",
+    "target": "boudiner"
+  },
+  {
+    "input": "ulcérâmes",
+    "target": "ulcérer"
+  },
+  {
+    "input": "brui",
+    "target": "bruire"
+  },
+  {
+    "input": "laiera",
+    "target": "layer"
+  },
+  {
+    "input": "élucubrions",
+    "target": "élucubrer"
+  },
+  {
+    "input": "illuminai",
+    "target": "illuminer"
+  },
+  {
+    "input": "expulsiez",
+    "target": "expulser"
+  },
+  {
+    "input": "gaspillait",
+    "target": "gaspiller"
+  },
+  {
+    "input": "exonéreras",
+    "target": "exonérer"
+  },
+  {
+    "input": "ramollissent",
+    "target": "ramollir"
+  },
+  {
+    "input": "escortèrent",
+    "target": "escorter"
+  },
+  {
+    "input": "salisses",
+    "target": "salir"
+  },
+  {
+    "input": "réembauchent",
+    "target": "réembaucher"
+  },
+  {
+    "input": "graffiteriez",
+    "target": "graffiter"
+  },
+  {
+    "input": "dégringola",
+    "target": "dégringoler"
+  },
+  {
+    "input": "attristiez",
+    "target": "attrister"
+  },
+  {
+    "input": "trépignai",
+    "target": "trépigner"
+  },
+  {
+    "input": "assourdirons",
+    "target": "assourdir"
+  },
+  {
+    "input": "multipliassions",
+    "target": "multiplier"
+  },
+  {
+    "input": "enturbannerons",
+    "target": "enturbanner"
+  },
+  {
+    "input": "dealerais",
+    "target": "dealer"
+  },
+  {
+    "input": "exploitent",
+    "target": "exploiter"
+  },
+  {
+    "input": "vouvoyât",
+    "target": "vouvoyer"
+  },
+  {
+    "input": "érigez",
+    "target": "ériger"
+  },
+  {
+    "input": "beloterait",
+    "target": "beloter"
+  },
+  {
+    "input": "pinceras",
+    "target": "pincer"
+  },
+  {
+    "input": "écarquille",
+    "target": "écarquiller"
+  },
+  {
+    "input": "préjugeassent",
+    "target": "préjuger"
+  },
+  {
+    "input": "réaccoutumerai",
+    "target": "réaccoutumer"
+  },
+  {
+    "input": "décanteront",
+    "target": "décanter"
+  },
+  {
+    "input": "ajourent",
+    "target": "ajourer"
+  },
+  {
+    "input": "rassemblés",
+    "target": "rassembler"
+  },
+  {
+    "input": "poliçons",
+    "target": "policer"
+  },
+  {
+    "input": "déjaugeâtes",
+    "target": "déjauger"
+  },
+  {
+    "input": "entretoisasse",
+    "target": "entretoiser"
+  },
+  {
+    "input": "lapiez",
+    "target": "laper"
+  },
+  {
+    "input": "décolériez",
+    "target": "décolérer"
+  },
+  {
+    "input": "bagoteras",
+    "target": "bagoter"
+  },
+  {
+    "input": "appartenait",
+    "target": "appartenir"
+  },
+  {
+    "input": "tramés",
+    "target": "tramer"
+  },
+  {
+    "input": "convulsionnons",
+    "target": "convulsionner"
+  },
+  {
+    "input": "désodorisâtes",
+    "target": "désodoriser"
+  },
+  {
+    "input": "essuierait",
+    "target": "essuyer"
+  },
+  {
+    "input": "fainéantiez",
+    "target": "fainéanter"
+  },
+  {
+    "input": "empierrés",
+    "target": "empierrer"
+  },
+  {
+    "input": "ébrécheront",
+    "target": "ébrécher"
+  },
+  {
+    "input": "reparcourirons",
+    "target": "reparcourir"
+  },
+  {
+    "input": "pifferais",
+    "target": "piffer"
+  },
+  {
+    "input": "déchâtes",
+    "target": "décher"
+  },
+  {
+    "input": "remarquassions",
+    "target": "remarquer"
+  },
+  {
+    "input": "roupillerai",
+    "target": "roupiller"
+  },
+  {
+    "input": "sucerez",
+    "target": "sucer"
+  },
+  {
+    "input": "jaugerions",
+    "target": "jauger"
+  },
+  {
+    "input": "atterrissais",
+    "target": "atterrir"
+  },
+  {
+    "input": "essorant",
+    "target": "essorer"
+  },
+  {
+    "input": "épiles",
+    "target": "épiler"
+  },
+  {
+    "input": "lampons",
+    "target": "lamper"
+  },
+  {
+    "input": "entortillasses",
+    "target": "entortiller"
+  },
+  {
+    "input": "recordée",
+    "target": "recorder"
+  },
+  {
+    "input": "asphyxiera",
+    "target": "asphyxier"
+  },
+  {
+    "input": "corrodassions",
+    "target": "corroder"
+  },
+  {
+    "input": "pétrifierai",
+    "target": "pétrifier"
+  },
+  {
+    "input": "accoucherait",
+    "target": "accoucher"
+  },
+  {
+    "input": "limitiez",
+    "target": "limiter"
+  },
+  {
+    "input": "oie",
+    "target": "ouïr"
+  },
+  {
+    "input": "circoncira",
+    "target": "circoncire"
+  },
+  {
+    "input": "embrassassiez",
+    "target": "embrasser"
+  },
+  {
+    "input": "aboierions",
+    "target": "aboyer"
+  },
+  {
+    "input": "décolonises",
+    "target": "décoloniser"
+  },
+  {
+    "input": "mirais",
+    "target": "mirer"
+  },
+  {
+    "input": "réchappasses",
+    "target": "réchapper"
+  },
+  {
+    "input": "rancirai",
+    "target": "rancir"
+  },
+  {
+    "input": "raccourcissons",
+    "target": "raccourcir"
+  },
+  {
+    "input": "anatomiserez",
+    "target": "anatomiser"
+  },
+  {
+    "input": "emplâtrâtes",
+    "target": "emplâtrer"
+  },
+  {
+    "input": "clamions",
+    "target": "clamer"
+  },
+  {
+    "input": "traînassées",
+    "target": "traînasser"
+  },
+  {
+    "input": "fortifias",
+    "target": "fortifier"
+  },
+  {
+    "input": "giflâmes",
+    "target": "gifler"
+  },
+  {
+    "input": "hachurassiez",
+    "target": "hachurer"
+  },
+  {
+    "input": "polycopient",
+    "target": "polycopier"
+  },
+  {
+    "input": "améliorerions",
+    "target": "améliorer"
+  },
+  {
+    "input": "amocheront",
+    "target": "amocher"
+  },
+  {
+    "input": "déchiffrez",
+    "target": "déchiffrer"
+  },
+  {
+    "input": "caboteriez",
+    "target": "caboter"
+  },
+  {
+    "input": "licenciant",
+    "target": "licencier"
+  },
+  {
+    "input": "lamant",
+    "target": "lamer"
+  },
+  {
+    "input": "zesterez",
+    "target": "zester"
+  },
+  {
+    "input": "extirperaient",
+    "target": "extirper"
+  },
+  {
+    "input": "rente",
+    "target": "renter"
+  },
+  {
+    "input": "encanailleraient",
+    "target": "encanailler"
+  },
+  {
+    "input": "défrichera",
+    "target": "défricher"
+  },
+  {
+    "input": "reconstituée",
+    "target": "reconstituer"
+  },
+  {
+    "input": "emberlificotons",
+    "target": "emberlificoter"
+  },
+  {
+    "input": "vulgariser",
+    "target": "vulgariser"
+  },
+  {
+    "input": "déparlassent",
+    "target": "déparler"
+  },
+  {
+    "input": "bourrons",
+    "target": "bourrer"
+  },
+  {
+    "input": "possédions",
+    "target": "posséder"
+  },
+  {
+    "input": "venais",
+    "target": "venir"
+  },
+  {
+    "input": "carminera",
+    "target": "carminer"
+  }
+]

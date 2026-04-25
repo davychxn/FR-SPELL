@@ -1,0 +1,45 @@
+{
+  "name": "FrSpell",
+  "description": "A NPM Library To Convert Derivative Forms Of Noun, Verb or Adjective In French To Lemmas Or Vice Versa.",
+  "version": "1.0.1",
+  "type": "module",
+  "scripts": {
+    "test": "node test/test.js",
+    "benchmark:prepare": "node benchmark/generate-checklists.js",
+    "benchmark": "node benchmark/run-benchmark.js",
+    "benchmark:lemma": "node benchmark/run-benchmark.js lemma",
+    "benchmark:noun": "node benchmark/run-benchmark.js noun",
+    "benchmark:verb": "node benchmark/run-benchmark.js verb",
+    "benchmark:adje": "node benchmark/run-benchmark.js adje"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/davychxn/FRSPELL"
+  },
+  "keywords": [
+    "french",
+    "Le français",
+    "word lemma",
+    "word derivative",
+    "lemmatization",
+    "conjugation",
+    "spelling",
+    "french noun",
+    "french verb",
+    "french adjective"
+  ],
+  "homepage": "https://github.com/davychxn/FRSPELL",
+  "license": "MIT",
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/davychxn"
+  },
+  "author": {
+    "name": "Davy Chen",
+    "email": "davy.chen@163.com",
+    "url": "https://www.linkedin.com/in/davychxn/"
+  },
+  "dependencies": {
+    "onnxruntime-node": "^1.24.3"
+  }
+}

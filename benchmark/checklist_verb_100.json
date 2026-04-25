@@ -1,0 +1,702 @@
+[
+  {
+    "lemma": "engueuler",
+    "person": "FST_PL",
+    "mode": "INDI",
+    "tense": "PRES",
+    "target": "engueulons"
+  },
+  {
+    "lemma": "tresser",
+    "person": "ALL",
+    "mode": "INFI",
+    "tense": "ALL",
+    "target": "tresser"
+  },
+  {
+    "lemma": "plaquer",
+    "person": "FST",
+    "mode": "INDI",
+    "tense": "IMPA",
+    "target": "plaquais"
+  },
+  {
+    "lemma": "défaire",
+    "person": "THD_F",
+    "mode": "PART",
+    "tense": "PASS",
+    "target": "défaite"
+  },
+  {
+    "lemma": "détendre",
+    "person": "SND_PL",
+    "mode": "INDI",
+    "tense": "IMPA",
+    "target": "détendiez"
+  },
+  {
+    "lemma": "mutiler",
+    "person": "THD_PLM",
+    "mode": "INDI",
+    "tense": "PRES",
+    "target": "mutilent"
+  },
+  {
+    "lemma": "coffrer",
+    "person": "SND",
+    "mode": "IMPE",
+    "tense": "PRES",
+    "target": "coffre"
+  },
+  {
+    "lemma": "investir",
+    "person": "SND",
+    "mode": "INDI",
+    "tense": "IMPA",
+    "target": "investissais"
+  },
+  {
+    "lemma": "pomper",
+    "person": "SND",
+    "mode": "COND",
+    "tense": "PRES",
+    "target": "pomperais"
+  },
+  {
+    "lemma": "contaminer",
+    "person": "THD_PLM",
+    "mode": "INDI",
+    "tense": "IMPA",
+    "target": "contaminaient"
+  },
+  {
+    "lemma": "affaler",
+    "person": "SND_PL",
+    "mode": "IMPE",
+    "tense": "PRES",
+    "target": "affalez"
+  },
+  {
+    "lemma": "proclamer",
+    "person": "FST",
+    "mode": "INDI",
+    "tense": "IMPA",
+    "target": "proclamais"
+  },
+  {
+    "lemma": "déborder",
+    "person": "THD_PLM",
+    "mode": "COND",
+    "tense": "PRES",
+    "target": "déborderaient"
+  },
+  {
+    "lemma": "varier",
+    "person": "ALL",
+    "mode": "INFI",
+    "tense": "ALL",
+    "target": "varier"
+  },
+  {
+    "lemma": "expliquer",
+    "person": "SND",
+    "mode": "INDI",
+    "tense": "FUTU",
+    "target": "expliqueras"
+  },
+  {
+    "lemma": "comprendre",
+    "person": "FST_PL",
+    "mode": "INDI",
+    "tense": "FUTU",
+    "target": "comprendrons"
+  },
+  {
+    "lemma": "paraître",
+    "person": "FST",
+    "mode": "COND",
+    "tense": "PRES",
+    "target": "paraîtrais"
+  },
+  {
+    "lemma": "égayer",
+    "person": "THD_PLM",
+    "mode": "INDI",
+    "tense": "PASS",
+    "target": "égayèrent"
+  },
+  {
+    "lemma": "amortir",
+    "person": "THD_PLM",
+    "mode": "PART",
+    "tense": "PASS",
+    "target": "amortis"
+  },
+  {
+    "lemma": "ignorer",
+    "person": "THD_M",
+    "mode": "INDI",
+    "tense": "PASS",
+    "target": "ignora"
+  },
+  {
+    "lemma": "redire",
+    "person": "FST",
+    "mode": "INDI",
+    "tense": "FUTU",
+    "target": "redirai"
+  },
+  {
+    "lemma": "déverser",
+    "person": "THD_M",
+    "mode": "INDI",
+    "tense": "PRES",
+    "target": "déverse"
+  },
+  {
+    "lemma": "boutonner",
+    "person": "FST",
+    "mode": "INDI",
+    "tense": "IMPA",
+    "target": "boutonnais"
+  },
+  {
+    "lemma": "prolonger",
+    "person": "SND_PL",
+    "mode": "INDI",
+    "tense": "PRES",
+    "target": "prolongez"
+  },
+  {
+    "lemma": "employer",
+    "person": "THD_M",
+    "mode": "INDI",
+    "tense": "IMPA",
+    "target": "employait"
+  },
+  {
+    "lemma": "embêter",
+    "person": "THD_M",
+    "mode": "INDI",
+    "tense": "IMPA",
+    "target": "embêtait"
+  },
+  {
+    "lemma": "brouter",
+    "person": "THD_M",
+    "mode": "INDI",
+    "tense": "PRES",
+    "target": "broute"
+  },
+  {
+    "lemma": "convaincre",
+    "person": "FST",
+    "mode": "INDI",
+    "tense": "PRES",
+    "target": "convaincs"
+  },
+  {
+    "lemma": "fuir",
+    "person": "ALL",
+    "mode": "PART",
+    "tense": "PRES",
+    "target": "fuyant"
+  },
+  {
+    "lemma": "essayer",
+    "person": "THD_M",
+    "mode": "PART",
+    "tense": "PASS",
+    "target": "essayé"
+  },
+  {
+    "lemma": "décider",
+    "person": "FST",
+    "mode": "INDI",
+    "tense": "IMPA",
+    "target": "décidais"
+  },
+  {
+    "lemma": "appareiller",
+    "person": "THD_M",
+    "mode": "INDI",
+    "tense": "PASS",
+    "target": "appareilla"
+  },
+  {
+    "lemma": "réfléchir",
+    "person": "THD_PLM",
+    "mode": "INDI",
+    "tense": "PASS",
+    "target": "réfléchirent"
+  },
+  {
+    "lemma": "rater",
+    "person": "THD_PLM",
+    "mode": "INDI",
+    "tense": "FUTU",
+    "target": "rateront"
+  },
+  {
+    "lemma": "rejeter",
+    "person": "THD_PLF",
+    "mode": "PART",
+    "tense": "PASS",
+    "target": "rejetées"
+  },
+  {
+    "lemma": "ressembler",
+    "person": "THD_PLM",
+    "mode": "COND",
+    "tense": "PRES",
+    "target": "ressembleraient"
+  },
+  {
+    "lemma": "terrer",
+    "person": "THD_F",
+    "mode": "PART",
+    "tense": "PASS",
+    "target": "terrée"
+  },
+  {
+    "lemma": "impressionner",
+    "person": "THD_M",
+    "mode": "INDI",
+    "tense": "PASS",
+    "target": "impressionna"
+  },
+  {
+    "lemma": "stopper",
+    "person": "THD_PLF",
+    "mode": "PART",
+    "tense": "PASS",
+    "target": "stoppées"
+  },
+  {
+    "lemma": "rêver",
+    "person": "THD_PLM",
+    "mode": "INDI",
+    "tense": "PRES",
+    "target": "rêvent"
+  },
+  {
+    "lemma": "crisper",
+    "person": "FST",
+    "mode": "INDI",
+    "tense": "PASS",
+    "target": "crispai"
+  },
+  {
+    "lemma": "mentionner",
+    "person": "FST",
+    "mode": "COND",
+    "tense": "PRES",
+    "target": "mentionnerais"
+  },
+  {
+    "lemma": "renouer",
+    "person": "THD_PLM",
+    "mode": "PART",
+    "tense": "PASS",
+    "target": "renoués"
+  },
+  {
+    "lemma": "affecter",
+    "person": "SND",
+    "mode": "IMPE",
+    "tense": "PRES",
+    "target": "affecte"
+  },
+  {
+    "lemma": "mouler",
+    "person": "SND",
+    "mode": "INDI",
+    "tense": "PRES",
+    "target": "moules"
+  },
+  {
+    "lemma": "référer",
+    "person": "ALL",
+    "mode": "INFI",
+    "tense": "ALL",
+    "target": "référer"
+  },
+  {
+    "lemma": "étaler",
+    "person": "THD_M",
+    "mode": "INDI",
+    "tense": "FUTU",
+    "target": "étalera"
+  },
+  {
+    "lemma": "infecter",
+    "person": "THD_PLM",
+    "mode": "PART",
+    "tense": "PASS",
+    "target": "infectés"
+  },
+  {
+    "lemma": "approcher",
+    "person": "FST",
+    "mode": "SUBJ",
+    "tense": "PRES",
+    "target": "approche"
+  },
+  {
+    "lemma": "ficher",
+    "person": "FST_PL",
+    "mode": "INDI",
+    "tense": "IMPA",
+    "target": "fichions"
+  },
+  {
+    "lemma": "fusiller",
+    "person": "SND_PL",
+    "mode": "INDI",
+    "tense": "PRES",
+    "target": "fusillez"
+  },
+  {
+    "lemma": "vérifier",
+    "person": "ALL",
+    "mode": "PART",
+    "tense": "PRES",
+    "target": "vérifiant"
+  },
+  {
+    "lemma": "griser",
+    "person": "THD_M",
+    "mode": "INDI",
+    "tense": "FUTU",
+    "target": "grisera"
+  },
+  {
+    "lemma": "parvenir",
+    "person": "SND_PL",
+    "mode": "INDI",
+    "tense": "PRES",
+    "target": "parvenez"
+  },
+  {
+    "lemma": "prétendre",
+    "person": "FST_PL",
+    "mode": "IMPE",
+    "tense": "PRES",
+    "target": "prétendons"
+  },
+  {
+    "lemma": "fouetter",
+    "person": "THD_M",
+    "mode": "COND",
+    "tense": "PRES",
+    "target": "fouetterait"
+  },
+  {
+    "lemma": "rincer",
+    "person": "ALL",
+    "mode": "PART",
+    "tense": "PRES",
+    "target": "rinçant"
+  },
+  {
+    "lemma": "séjourner",
+    "person": "FST_PL",
+    "mode": "INDI",
+    "tense": "FUTU",
+    "target": "séjournerons"
+  },
+  {
+    "lemma": "larguer",
+    "person": "SND_PL",
+    "mode": "INDI",
+    "tense": "IMPA",
+    "target": "larguiez"
+  },
+  {
+    "lemma": "prouver",
+    "person": "THD_PLM",
+    "mode": "INDI",
+    "tense": "PASS",
+    "target": "prouvèrent"
+  },
+  {
+    "lemma": "réaliser",
+    "person": "FST",
+    "mode": "INDI",
+    "tense": "IMPA",
+    "target": "réalisais"
+  },
+  {
+    "lemma": "contrer",
+    "person": "FST",
+    "mode": "INDI",
+    "tense": "PRES",
+    "target": "contre"
+  },
+  {
+    "lemma": "déchausser",
+    "person": "ALL",
+    "mode": "PART",
+    "tense": "PRES",
+    "target": "déchaussant"
+  },
+  {
+    "lemma": "couronner",
+    "person": "FST_PL",
+    "mode": "INDI",
+    "tense": "FUTU",
+    "target": "couronnerons"
+  },
+  {
+    "lemma": "déclarer",
+    "person": "FST",
+    "mode": "COND",
+    "tense": "PRES",
+    "target": "déclarerais"
+  },
+  {
+    "lemma": "distraire",
+    "person": "THD_M",
+    "mode": "INDI",
+    "tense": "IMPA",
+    "target": "distrayait"
+  },
+  {
+    "lemma": "diffuser",
+    "person": "FST_PL",
+    "mode": "INDI",
+    "tense": "PRES",
+    "target": "diffusons"
+  },
+  {
+    "lemma": "contenter",
+    "person": "THD_PLM",
+    "mode": "INDI",
+    "tense": "IMPA",
+    "target": "contentaient"
+  },
+  {
+    "lemma": "situer",
+    "person": "SND",
+    "mode": "INDI",
+    "tense": "PRES",
+    "target": "situes"
+  },
+  {
+    "lemma": "entamer",
+    "person": "SND",
+    "mode": "IMPE",
+    "tense": "PRES",
+    "target": "entame"
+  },
+  {
+    "lemma": "tirer",
+    "person": "SND",
+    "mode": "IMPE",
+    "tense": "PRES",
+    "target": "tire"
+  },
+  {
+    "lemma": "abuser",
+    "person": "THD_PLM",
+    "mode": "INDI",
+    "tense": "PASS",
+    "target": "abusèrent"
+  },
+  {
+    "lemma": "entêter",
+    "person": "FST",
+    "mode": "INDI",
+    "tense": "IMPA",
+    "target": "entêtais"
+  },
+  {
+    "lemma": "arriver",
+    "person": "FST_PL",
+    "mode": "COND",
+    "tense": "PRES",
+    "target": "arriverions"
+  },
+  {
+    "lemma": "rapatrier",
+    "person": "THD_M",
+    "mode": "INDI",
+    "tense": "PASS",
+    "target": "rapatria"
+  },
+  {
+    "lemma": "assouvir",
+    "person": "THD_M",
+    "mode": "INDI",
+    "tense": "PASS",
+    "target": "assouvit"
+  },
+  {
+    "lemma": "fier",
+    "person": "THD_M",
+    "mode": "INDI",
+    "tense": "IMPA",
+    "target": "fiait"
+  },
+  {
+    "lemma": "esquisser",
+    "person": "THD_PLM",
+    "mode": "PART",
+    "tense": "PASS",
+    "target": "esquissés"
+  },
+  {
+    "lemma": "gravir",
+    "person": "FST_PL",
+    "mode": "INDI",
+    "tense": "PRES",
+    "target": "gravissons"
+  },
+  {
+    "lemma": "injurier",
+    "person": "THD_PLM",
+    "mode": "INDI",
+    "tense": "PRES",
+    "target": "injurient"
+  },
+  {
+    "lemma": "déplorer",
+    "person": "SND_PL",
+    "mode": "INDI",
+    "tense": "PRES",
+    "target": "déplorez"
+  },
+  {
+    "lemma": "verrouiller",
+    "person": "ALL",
+    "mode": "PART",
+    "tense": "PRES",
+    "target": "verrouillant"
+  },
+  {
+    "lemma": "redescendre",
+    "person": "THD_M",
+    "mode": "INDI",
+    "tense": "PRES",
+    "target": "redescend"
+  },
+  {
+    "lemma": "produire",
+    "person": "THD_PLM",
+    "mode": "INDI",
+    "tense": "IMPA",
+    "target": "produisaient"
+  },
+  {
+    "lemma": "accomplir",
+    "person": "SND_PL",
+    "mode": "INDI",
+    "tense": "FUTU",
+    "target": "accomplirez"
+  },
+  {
+    "lemma": "afficher",
+    "person": "FST",
+    "mode": "INDI",
+    "tense": "PRES",
+    "target": "affiche"
+  },
+  {
+    "lemma": "nourrir",
+    "person": "THD_PLM",
+    "mode": "INDI",
+    "tense": "PASS",
+    "target": "nourrirent"
+  },
+  {
+    "lemma": "dégonfler",
+    "person": "ALL",
+    "mode": "INFI",
+    "tense": "ALL",
+    "target": "dégonfler"
+  },
+  {
+    "lemma": "dilater",
+    "person": "THD_PLM",
+    "mode": "INDI",
+    "tense": "PRES",
+    "target": "dilatent"
+  },
+  {
+    "lemma": "émettre",
+    "person": "SND",
+    "mode": "IMPE",
+    "tense": "PRES",
+    "target": "émets"
+  },
+  {
+    "lemma": "rechercher",
+    "person": "FST",
+    "mode": "INDI",
+    "tense": "FUTU",
+    "target": "rechercherai"
+  },
+  {
+    "lemma": "organiser",
+    "person": "THD_M",
+    "mode": "SUBJ",
+    "tense": "IMPA",
+    "target": "organisât"
+  },
+  {
+    "lemma": "choisir",
+    "person": "THD_M",
+    "mode": "COND",
+    "tense": "PRES",
+    "target": "choisirait"
+  },
+  {
+    "lemma": "ordonner",
+    "person": "FST",
+    "mode": "INDI",
+    "tense": "PRES",
+    "target": "ordonne"
+  },
+  {
+    "lemma": "préférer",
+    "person": "THD_PLM",
+    "mode": "SUBJ",
+    "tense": "PRES",
+    "target": "préfèrent"
+  },
+  {
+    "lemma": "reposer",
+    "person": "FST_PL",
+    "mode": "INDI",
+    "tense": "FUTU",
+    "target": "reposerons"
+  },
+  {
+    "lemma": "relayer",
+    "person": "SND_PL",
+    "mode": "IMPE",
+    "tense": "PRES",
+    "target": "relayez"
+  },
+  {
+    "lemma": "réclamer",
+    "person": "SND",
+    "mode": "SUBJ",
+    "tense": "PRES",
+    "target": "réclames"
+  },
+  {
+    "lemma": "enseigner",
+    "person": "FST",
+    "mode": "INDI",
+    "tense": "PRES",
+    "target": "enseigne"
+  },
+  {
+    "lemma": "submerger",
+    "person": "THD_M",
+    "mode": "PART",
+    "tense": "PASS",
+    "target": "submergé"
+  }
+]
