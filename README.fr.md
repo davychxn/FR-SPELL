@@ -1,4 +1,4 @@
-# FRSPELL
+# FR-SPELL
 
 [English](README.md) | [中文](README.cn.md) | [Français](README.fr.md)
 
