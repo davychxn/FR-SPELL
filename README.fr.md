@@ -45,6 +45,46 @@ Exemple de sortie a l'execution :
 { lemma: 'manger', wordType: 'VERB', person: 'FST_PL', mode: 'INDI', tense: 'PRES', output: 'mangeons', confidence: 0.9999864523, timeMs: 4.79 }
 ```
 
+## Parametres de prediction
+
+Prediction de lemme :
+
+- API : `predictor.lemma(input)`
+- `input` : chaine de caracteres, forme flechie/conjuguee, par exemple `mangeons`
+
+Prediction de derive :
+
+- API nom : `predictor.nounDerive(lemma, person, mode, tense)`
+- API adjectif : `predictor.adjeDerive(lemma, person, mode, tense)`
+- API verbe : `predictor.verbDerive(lemma, person, mode, tense)`
+- API generique : `predictor.derive(lemma, wordType, person, mode, tense)`
+
+Valeurs `wordType` autorisees :
+
+- `NOUN`
+- `ADJE`
+- `VERB`
+
+Valeurs `person` autorisees :
+
+- `NONE`, `FST`, `SND`, `THD_M`, `THD_F`, `FST_PL`, `SND_PL`, `THD_PLM`, `THD_PLF`, `ALL`
+
+Valeurs `mode` autorisees :
+
+- `NONE`, `INDI`, `SUBJ`, `COND`, `PART`, `IMPE`, `INFI`, `ALL`
+
+Valeurs `tense` prises en charge dans l'implementation actuelle :
+
+- `PRES` (present)
+- `IMPA` (imparfait)
+- `FUTU` (futur)
+- `PASS` (passe)
+
+Note :
+
+- Le fichier de definitions d'origine contient plus de noms de temps, mais ce package prend actuellement en charge uniquement `PRES`, `IMPA`, `FUTU`, `PASS`.
+- Pour les appels nom/adjectif, `mode` et `tense` sont generalement `ALL`.
+
 ## Exécuter les tests
 
 ```bash
@@ -52,6 +92,14 @@ npm test
 ```
 
 Cette commande exécute test/test.js et affiche des exemples de prédiction.
+
+## Afficher l'aide
+
+```bash
+npm run help
+```
+
+Cette commande affiche un guide rapide des paramètres pour `lemma`, `nounDerive`, `adjeDerive`, `verbDerive` et `derive`, avec les valeurs autorisées de person/mode/tense.
 
 ## Exécuter les benchmarks
 

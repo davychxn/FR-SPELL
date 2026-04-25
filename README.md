@@ -45,6 +45,46 @@ Sample runtime output:
 { lemma: 'manger', wordType: 'VERB', person: 'FST_PL', mode: 'INDI', tense: 'PRES', output: 'mangeons', confidence: 0.9999864523, timeMs: 4.79 }
 ```
 
+## Prediction Parameters
+
+Lemma prediction:
+
+- API: `predictor.lemma(input)`
+- `input`: string, inflected/conjugated word form, for example `mangeons`
+
+Derive prediction:
+
+- Noun API: `predictor.nounDerive(lemma, person, mode, tense)`
+- Adjective API: `predictor.adjeDerive(lemma, person, mode, tense)`
+- Verb API: `predictor.verbDerive(lemma, person, mode, tense)`
+- Generic API: `predictor.derive(lemma, wordType, person, mode, tense)`
+
+Allowed `wordType` values:
+
+- `NOUN`
+- `ADJE`
+- `VERB`
+
+Allowed `person` values:
+
+- `NONE`, `FST`, `SND`, `THD_M`, `THD_F`, `FST_PL`, `SND_PL`, `THD_PLM`, `THD_PLF`, `ALL`
+
+Allowed `mode` values:
+
+- `NONE`, `INDI`, `SUBJ`, `COND`, `PART`, `IMPE`, `INFI`, `ALL`
+
+Allowed `tense` values in current implementation:
+
+- `PRES` (present)
+- `IMPA` (imperfect)
+- `FUTU` (future)
+- `PASS` (past)
+
+Note:
+
+- The original grammar definition file includes more tense names, but this package implementation currently supports only `PRES`, `IMPA`, `FUTU`, `PASS`.
+- For noun/adjective derive calls, `mode` and `tense` are usually `ALL`.
+
 ## Run Test
 
 ```bash
@@ -52,6 +92,14 @@ npm test
 ```
 
 This executes test/test.js and prints sample prediction outputs.
+
+## Run Help
+
+```bash
+npm run help
+```
+
+This prints a quick parameter reference for `lemma`, `nounDerive`, `adjeDerive`, `verbDerive`, and `derive`, including allowed person/mode/tense values.
 
 ## Run Benchmark
 

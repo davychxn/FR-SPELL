@@ -45,6 +45,46 @@ console.log(verb);
 { lemma: 'manger', wordType: 'VERB', person: 'FST_PL', mode: 'INDI', tense: 'PRES', output: 'mangeons', confidence: 0.9999864523, timeMs: 4.79 }
 ```
 
+## 预测参数说明
+
+词元预测（lemma）：
+
+- API：`predictor.lemma(input)`
+- `input`：字符串，输入变位/屈折后的词形，例如 `mangeons`
+
+派生预测（derive）：
+
+- 名词 API：`predictor.nounDerive(lemma, person, mode, tense)`
+- 形容词 API：`predictor.adjeDerive(lemma, person, mode, tense)`
+- 动词 API：`predictor.verbDerive(lemma, person, mode, tense)`
+- 通用 API：`predictor.derive(lemma, wordType, person, mode, tense)`
+
+可用 `wordType`：
+
+- `NOUN`
+- `ADJE`
+- `VERB`
+
+可用 `person`：
+
+- `NONE`, `FST`, `SND`, `THD_M`, `THD_F`, `FST_PL`, `SND_PL`, `THD_PLM`, `THD_PLF`, `ALL`
+
+可用 `mode`：
+
+- `NONE`, `INDI`, `SUBJ`, `COND`, `PART`, `IMPE`, `INFI`, `ALL`
+
+当前实现支持的 `tense` 仅有：
+
+- `PRES`（现在时）
+- `IMPA`（未完成过去时）
+- `FUTU`（将来时）
+- `PASS`（过去时）
+
+说明：
+
+- 参考定义文件中还有更多时态名称，但本包实现目前只支持 `PRES`、`IMPA`、`FUTU`、`PASS`。
+- 对于名词/形容词派生，`mode` 与 `tense` 通常使用 `ALL`。
+
 ## 运行测试
 
 ```bash
@@ -52,6 +92,14 @@ npm test
 ```
 
 该命令会执行 test/test.js，并输出示例预测结果。
+
+## 查看帮助
+
+```bash
+npm run help
+```
+
+该命令会输出参数速查说明，覆盖 `lemma`、`nounDerive`、`adjeDerive`、`verbDerive`、`derive` 及 person/mode/tense 可用值。
 
 ## 运行基准测试
 
