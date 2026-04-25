@@ -2,7 +2,7 @@
 
 [English](README.md) | [中文](README.cn.md) | [Français](README.fr.md)
 
-FRSPELL est un package npm pour la prédiction de lemme en français et la génération de formes dérivées.
+FR-SPELL est un package npm pour la prédiction de lemme en français et la génération de formes dérivées.
 Fonctionnalités prises en charge :
 
 - prédiction du lemme à partir d'une forme conjuguée

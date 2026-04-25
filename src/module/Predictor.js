@@ -1,5 +1,5 @@
 /**
- * FRSPELL core predictor implementation
+ * FR-SPELL core predictor implementation
  * Author: Davy Chen <davy.chen@163.com>
  * Profile: https://www.linkedin.com/in/davychxn/
  */

@@ -1,5 +1,5 @@
 const lines = [
-  'FRSPELL Help',
+  'FR-SPELL Help',
   '============',
   '',
   'Create predictor:',

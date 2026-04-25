@@ -1,5 +1,5 @@
 /**
- * FRSPELL source entry
+ * FR-SPELL source entry
  * Author: Davy Chen <davy.chen@163.com>
  * Profile: https://www.linkedin.com/in/davychxn/
  */

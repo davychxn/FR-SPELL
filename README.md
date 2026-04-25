@@ -2,7 +2,7 @@
 
 [English](README.md) | [中文](README.cn.md) | [Français](README.fr.md)
 
-FRSPELL is an npm package for French lemma prediction and derivative form generation.
+FR-SPELL is an npm package for French lemma prediction and derivative form generation.
 It supports:
 
 - conjugation to lemma prediction

@@ -2,7 +2,7 @@
 
 [English](README.md) | [中文](README.cn.md) | [Français](README.fr.md)
 
-FRSPELL 是一个用于法语词形还原与派生形态生成的 npm 包。
+FR-SPELL 是一个用于法语词形还原与派生形态生成的 npm 包。
 支持能力如下：
 
 - 将动词变位形式预测为词元（lemma）
