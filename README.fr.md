@@ -54,24 +54,36 @@ Prediction de lemme :
 
 Prediction de derive :
 
-- API nom : `predictor.nounDerive(lemma, person, mode, tense)`
-- API adjectif : `predictor.adjeDerive(lemma, person, mode, tense)`
+- API nom : `predictor.nounDerive(lemma, person)`
+- API adjectif : `predictor.adjeDerive(lemma, person)`
 - API verbe : `predictor.verbDerive(lemma, person, mode, tense)`
 - API generique : `predictor.derive(lemma, wordType, person, mode, tense)`
 
 Valeurs `wordType` autorisees :
 
-- `NOUN`
-- `ADJE`
-- `VERB`
+- `NOUN` (nom)
+- `ADJE` (adjectif)
+- `VERB` (verbe)
 
 Valeurs `person` autorisees :
 
-- `NONE`, `FST`, `SND`, `THD_M`, `THD_F`, `FST_PL`, `SND_PL`, `THD_PLM`, `THD_PLF`, `ALL`
+- `FST` (1re personne du singulier)
+- `SND` (2e personne du singulier)
+- `THD_M` (3e personne masculine du singulier)
+- `THD_F` (3e personne feminine du singulier)
+- `FST_PL` (1re personne du pluriel)
+- `SND_PL` (2e personne du pluriel)
+- `THD_PLM` (3e personne masculine du pluriel)
+- `THD_PLF` (3e personne feminine du pluriel)
 
 Valeurs `mode` autorisees :
 
-- `NONE`, `INDI`, `SUBJ`, `COND`, `PART`, `IMPE`, `INFI`, `ALL`
+- `INDI` (indicatif)
+- `SUBJ` (subjonctif)
+- `COND` (conditionnel)
+- `PART` (participe)
+- `IMPE` (imperatif)
+- `INFI` (infinitif)
 
 Valeurs `tense` prises en charge dans l'implementation actuelle :
 
@@ -83,7 +95,7 @@ Valeurs `tense` prises en charge dans l'implementation actuelle :
 Note :
 
 - Le fichier de definitions d'origine contient plus de noms de temps, mais ce package prend actuellement en charge uniquement `PRES`, `IMPA`, `FUTU`, `PASS`.
-- Pour les appels nom/adjectif, `mode` et `tense` sont generalement `ALL`.
+- Pour les appels nom/adjectif, `mode` et `tense` ne sont pas requis dans l'entree utilisateur.
 
 ## Exécuter les tests
 

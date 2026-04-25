@@ -54,24 +54,36 @@ console.log(verb);
 
 派生预测（derive）：
 
-- 名词 API：`predictor.nounDerive(lemma, person, mode, tense)`
-- 形容词 API：`predictor.adjeDerive(lemma, person, mode, tense)`
+- 名词 API：`predictor.nounDerive(lemma, person)`
+- 形容词 API：`predictor.adjeDerive(lemma, person)`
 - 动词 API：`predictor.verbDerive(lemma, person, mode, tense)`
 - 通用 API：`predictor.derive(lemma, wordType, person, mode, tense)`
 
 可用 `wordType`：
 
-- `NOUN`
-- `ADJE`
-- `VERB`
+- `NOUN`（名词）
+- `ADJE`（形容词）
+- `VERB`（动词）
 
 可用 `person`：
 
-- `NONE`, `FST`, `SND`, `THD_M`, `THD_F`, `FST_PL`, `SND_PL`, `THD_PLM`, `THD_PLF`, `ALL`
+- `FST`（第一人称单数）
+- `SND`（第二人称单数）
+- `THD_M`（第三人称阳性单数）
+- `THD_F`（第三人称阴性单数）
+- `FST_PL`（第一人称复数）
+- `SND_PL`（第二人称复数）
+- `THD_PLM`（第三人称阳性复数）
+- `THD_PLF`（第三人称阴性复数）
 
 可用 `mode`：
 
-- `NONE`, `INDI`, `SUBJ`, `COND`, `PART`, `IMPE`, `INFI`, `ALL`
+- `INDI`（陈述式）
+- `SUBJ`（虚拟式）
+- `COND`（条件式）
+- `PART`（分词式）
+- `IMPE`（命令式）
+- `INFI`（不定式）
 
 当前实现支持的 `tense` 仅有：
 
@@ -83,7 +95,7 @@ console.log(verb);
 说明：
 
 - 参考定义文件中还有更多时态名称，但本包实现目前只支持 `PRES`、`IMPA`、`FUTU`、`PASS`。
-- 对于名词/形容词派生，`mode` 与 `tense` 通常使用 `ALL`。
+- 对于名词/形容词派生，用户输入时不需要 `mode` 与 `tense`。
 
 ## 运行测试
 

@@ -54,24 +54,36 @@ Lemma prediction:
 
 Derive prediction:
 
-- Noun API: `predictor.nounDerive(lemma, person, mode, tense)`
-- Adjective API: `predictor.adjeDerive(lemma, person, mode, tense)`
+- Noun API: `predictor.nounDerive(lemma, person)`
+- Adjective API: `predictor.adjeDerive(lemma, person)`
 - Verb API: `predictor.verbDerive(lemma, person, mode, tense)`
 - Generic API: `predictor.derive(lemma, wordType, person, mode, tense)`
 
 Allowed `wordType` values:
 
-- `NOUN`
-- `ADJE`
-- `VERB`
+- `NOUN` (noun)
+- `ADJE` (adjective)
+- `VERB` (verb)
 
 Allowed `person` values:
 
-- `NONE`, `FST`, `SND`, `THD_M`, `THD_F`, `FST_PL`, `SND_PL`, `THD_PLM`, `THD_PLF`, `ALL`
+- `FST` (1st person singular)
+- `SND` (2nd person singular)
+- `THD_M` (3rd person masculine singular)
+- `THD_F` (3rd person feminine singular)
+- `FST_PL` (1st person plural)
+- `SND_PL` (2nd person plural)
+- `THD_PLM` (3rd person masculine plural)
+- `THD_PLF` (3rd person feminine plural)
 
 Allowed `mode` values:
 
-- `NONE`, `INDI`, `SUBJ`, `COND`, `PART`, `IMPE`, `INFI`, `ALL`
+- `INDI` (indicative)
+- `SUBJ` (subjunctive)
+- `COND` (conditional)
+- `PART` (participle)
+- `IMPE` (imperative)
+- `INFI` (infinitive)
 
 Allowed `tense` values in current implementation:
 
@@ -83,7 +95,7 @@ Allowed `tense` values in current implementation:
 Note:
 
 - The original grammar definition file includes more tense names, but this package implementation currently supports only `PRES`, `IMPA`, `FUTU`, `PASS`.
-- For noun/adjective derive calls, `mode` and `tense` are usually `ALL`.
+- For noun/adjective derive calls, `mode` and `tense` are not required in user input.
 
 ## Run Test
 
