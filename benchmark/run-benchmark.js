@@ -1,6 +1,6 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
-import { createFrSpellPredictor } from '../src/frspell.js';
+import { FrSpell } from '../src/frspell.js';
 
 const ROOT = process.cwd();
 const CHECKLIST_FILES = {
@@ -86,13 +86,7 @@ function printSummary(summary) {
 async function main() {
   const mode = process.argv[2] || 'all';
 
-  const predictor = await createFrSpellPredictor({
-    lemmaModelPath: 'models/small/lemma_type_model.int8.onnx',
-    lemmaVocabPath: 'models/small/lemma_type_vocab.json',
-    lemmaLabelsPath: 'models/small/lemma_type_labels.json',
-    derivativeModelPath: 'models/small/derive_form_model.int8.onnx',
-    derivativeVocabPath: 'models/small/derive_form_vocab.json',
-  });
+  const predictor = await FrSpell();
 
   const jobs = [];
 

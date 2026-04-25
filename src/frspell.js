@@ -1,3 +1,3 @@
 export {
-  createFrSpellPredictor,
+  FrSpell
 } from './module/Predictor.js';

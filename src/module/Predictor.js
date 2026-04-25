@@ -73,6 +73,14 @@ function normalizeEnumToken(value, fallback) {
   return fallback;
 }
 
+const DEFAULT_MODEL_PATHS = {
+  lemmaModelPath: 'models/small/lemma_type_model.int8.onnx',
+  lemmaVocabPath: 'models/small/lemma_type_vocab.json',
+  lemmaLabelsPath: 'models/small/lemma_type_labels.json',
+  derivativeModelPath: 'models/small/derive_form_model.int8.onnx',
+  derivativeVocabPath: 'models/small/derive_form_vocab.json',
+};
+
 export async function createLemmaTypePredictor({
   modelPath,
   vocabPath,
@@ -357,16 +365,18 @@ export async function createDerivativeTypePredictor({
   };
 }
 
-export async function createFrSpellPredictor({
-  lemmaModelPath,
-  lemmaVocabPath,
-  lemmaLabelsPath,
-  derivativeModelPath,
-  derivativeVocabPath,
-  lemmaMaxDecodeLen,
-  derivativeMaxDecodeLen,
-  executionProviders,
-}) {
+export async function FrSpell(options = {}) {
+  const {
+    lemmaModelPath = DEFAULT_MODEL_PATHS.lemmaModelPath,
+    lemmaVocabPath = DEFAULT_MODEL_PATHS.lemmaVocabPath,
+    lemmaLabelsPath = DEFAULT_MODEL_PATHS.lemmaLabelsPath,
+    derivativeModelPath = DEFAULT_MODEL_PATHS.derivativeModelPath,
+    derivativeVocabPath = DEFAULT_MODEL_PATHS.derivativeVocabPath,
+    lemmaMaxDecodeLen,
+    derivativeMaxDecodeLen,
+    executionProviders,
+  } = options;
+
   const [lemmaPredictor, derivativePredictor] = await Promise.all([
     createLemmaTypePredictor({
       modelPath: lemmaModelPath,

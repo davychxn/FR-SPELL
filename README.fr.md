@@ -21,15 +21,9 @@ npm install FrSpell
 ## Intégration dans votre projet
 
 ```js
-import { createFrSpellPredictor } from 'FrSpell';
+import { FrSpell } from 'FrSpell';
 
-const predictor = await createFrSpellPredictor({
-	lemmaModelPath: 'models/small/lemma_type_model.int8.onnx',
-	lemmaVocabPath: 'models/small/lemma_type_vocab.json',
-	lemmaLabelsPath: 'models/small/lemma_type_labels.json',
-	derivativeModelPath: 'models/small/derive_form_model.int8.onnx',
-	derivativeVocabPath: 'models/small/derive_form_vocab.json',
-});
+const predictor = await FrSpell();
 
 const lemma = await predictor.lemma('mangeons');
 const noun = await predictor.nounDerive('chat', 'THD_PLF');
