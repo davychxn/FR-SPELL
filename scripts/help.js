@@ -3,7 +3,7 @@ const lines = [
   '============',
   '',
   'Create predictor:',
-  "  import { FrSpell } from 'FrSpell';",
+  "  import { FrSpell } from 'fr-spell';",
   '  const predictor = await FrSpell();',
   '',
   'API methods:',

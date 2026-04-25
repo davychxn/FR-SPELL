@@ -15,13 +15,13 @@ The package runs with ONNX Runtime and quantized INT8 models for high speed and 
 ## Install
 
 ```bash
-npm install FrSpell
+npm install fr-spell
 ```
 
 ## Integrate Into Your Project
 
 ```js
-import { FrSpell } from 'FrSpell';
+import { FrSpell } from 'fr-spell';
 
 const predictor = await FrSpell();
 

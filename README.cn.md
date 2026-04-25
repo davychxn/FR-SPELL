@@ -15,13 +15,13 @@ FRSPELL 是一个用于法语词形还原与派生形态生成的 npm 包。
 ## 安装
 
 ```bash
-npm install FrSpell
+npm install fr-spell
 ```
 
 ## 集成到你的项目
 
 ```js
-import { FrSpell } from 'FrSpell';
+import { FrSpell } from 'fr-spell';
 
 const predictor = await FrSpell();
 

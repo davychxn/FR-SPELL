@@ -15,13 +15,13 @@ Le package s'appuie sur ONNX Runtime et des modèles INT8 quantifiés pour offri
 ## Installation
 
 ```bash
-npm install FrSpell
+npm install fr-spell
 ```
 
 ## Intégration dans votre projet
 
 ```js
-import { FrSpell } from 'FrSpell';
+import { FrSpell } from 'fr-spell';
 
 const predictor = await FrSpell();
 
