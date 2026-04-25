@@ -1,6 +1,12 @@
+/**
+ * FRSPELL core predictor implementation
+ * Author: Davy Chen <davy.chen@163.com>
+ * Profile: https://www.linkedin.com/in/davychxn/
+ */
 
 import fs from 'node:fs/promises';
 import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 import * as ort from 'onnxruntime-node';
 
 function argmax(arr) {
@@ -73,12 +79,15 @@ function normalizeEnumToken(value, fallback) {
   return fallback;
 }
 
+const MODULE_DIR = path.dirname(fileURLToPath(import.meta.url));
+const PACKAGE_ROOT = path.resolve(MODULE_DIR, '..', '..');
+
 const DEFAULT_MODEL_PATHS = {
-  lemmaModelPath: 'models/small/lemma_type_model.int8.onnx',
-  lemmaVocabPath: 'models/small/lemma_type_vocab.json',
-  lemmaLabelsPath: 'models/small/lemma_type_labels.json',
-  derivativeModelPath: 'models/small/derive_form_model.int8.onnx',
-  derivativeVocabPath: 'models/small/derive_form_vocab.json',
+  lemmaModelPath: path.resolve(PACKAGE_ROOT, 'models/small/lemma_type_model.int8.onnx'),
+  lemmaVocabPath: path.resolve(PACKAGE_ROOT, 'models/small/lemma_type_vocab.json'),
+  lemmaLabelsPath: path.resolve(PACKAGE_ROOT, 'models/small/lemma_type_labels.json'),
+  derivativeModelPath: path.resolve(PACKAGE_ROOT, 'models/small/derive_form_model.int8.onnx'),
+  derivativeVocabPath: path.resolve(PACKAGE_ROOT, 'models/small/derive_form_vocab.json'),
 };
 
 export async function createLemmaTypePredictor({

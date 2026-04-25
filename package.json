@@ -3,6 +3,10 @@
   "description": "A NPM Library To Convert Derivative Forms Of Noun, Verb or Adjective In French To Lemmas Or Vice Versa.",
   "version": "1.0.1",
   "type": "module",
+  "main": "./src/frspell.js",
+  "exports": {
+    ".": "./src/frspell.js"
+  },
   "scripts": {
     "help": "node scripts/help.js",
     "test": "node test/test.js",
