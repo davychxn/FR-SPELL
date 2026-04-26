@@ -172,20 +172,27 @@ npm run benchmark
 
 结果：
 
-- 由变位预测词元：99/100，准确率 99.00%，平均 16.46 ms
-- 名词派生：99/100，准确率 99.00%，平均 17.33 ms
-- 动词派生：100/100，准确率 100.00%，平均 17.12 ms
-- 形容词派生：100/100，准确率 100.00%，平均 17.34 ms
+- 由变位预测词元：97/100，准确率 97.00%，平均 22.21 ms
+- 名词派生：100/100，准确率 100.00%，平均 23.46 ms
+- 动词派生：100/100，准确率 100.00%，平均 23.18 ms
+- 形容词派生：100/100，准确率 100.00%，平均 23.49 ms
 
 ## 模型体积
 
-- 词元 ONNX 模型：models/small/lemma_type_model.int8.onnx = 0.96 MB
-- 派生 ONNX 模型：models/small/derive_form_model.int8.onnx = 0.91 MB
-- ONNX 总体积：约 1.87 MB
+- 当前默认（community）词元 ONNX 模型：models/community/lemma_type_model.int8.onnx = 1.48 MB
+- 当前默认（community）派生 ONNX 模型：models/community/derive_form_model.int8.onnx = 1.40 MB
+- 当前默认 ONNX 总体积：约 2.88 MB
+
+Mini 版本说明：
+
+- mini 词元 ONNX 模型目标大小：0.96 MB
+- mini 派生 ONNX 模型目标大小：0.91 MB
+- mini ONNX 总体积目标：约 1.87 MB
+- mini 模型版本将很快上线。
 
 ## 为什么它非常适合 Web 前端产品
 
 - 法语关键形态任务具有高准确率
-- 单次请求延迟低（本地基准平均约 16 到 17 ms）
-- ONNX 体积小（总计约 1.87 MB）
+- 单次请求延迟低（最新本地基准平均约 22 到 23 ms）
+- 当前默认 ONNX 体积紧凑（约 2.88 MB），更小的 mini 模型包（约 1.87 MB）即将上线
 - 非常适合为 Web 前端功能提供后端推理能力，例如实时写作辅助、语法提示与词元感知检索

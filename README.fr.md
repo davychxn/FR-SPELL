@@ -172,20 +172,27 @@ npm run benchmark
 
 Résultats :
 
-- lemme depuis une conjugaison : 99/100, précision 99.00 %, moyenne 16.46 ms
-- dérivation nominale : 99/100, précision 99.00 %, moyenne 17.33 ms
-- dérivation verbale : 100/100, précision 100.00 %, moyenne 17.12 ms
-- dérivation adjectivale : 100/100, précision 100.00 %, moyenne 17.34 ms
+- lemme depuis une conjugaison : 97/100, précision 97.00 %, moyenne 22.21 ms
+- dérivation nominale : 100/100, précision 100.00 %, moyenne 23.46 ms
+- dérivation verbale : 100/100, précision 100.00 %, moyenne 23.18 ms
+- dérivation adjectivale : 100/100, précision 100.00 %, moyenne 23.49 ms
 
 ## Taille des modèles
 
-- modèle ONNX lemme : models/small/lemma_type_model.int8.onnx = 0.96 MB
-- modèle ONNX dérivation : models/small/derive_form_model.int8.onnx = 0.91 MB
-- taille totale ONNX : environ 1.87 MB
+- modèle ONNX lemme par défaut (community) : models/community/lemma_type_model.int8.onnx = 1.48 MB
+- modèle ONNX dérivation par défaut (community) : models/community/derive_form_model.int8.onnx = 1.40 MB
+- taille ONNX totale par défaut actuelle : environ 2.88 MB
+
+Note sur la version mini :
+
+- taille cible du modèle lemme mini : 0.96 MB
+- taille cible du modèle dérivation mini : 0.91 MB
+- taille ONNX totale cible de la version mini : environ 1.87 MB
+- le package de modèles mini sera publié prochainement.
 
 ## Pourquoi c'est idéal pour des produits web frontend
 
 - excellente précision sur les tâches clés de morphologie française
-- faible latence par requête (environ 16 à 17 ms en moyenne sur benchmark local)
-- empreinte ONNX très compacte (environ 1.87 MB au total)
+- faible latence par requête (environ 22 à 23 ms en moyenne sur le dernier benchmark local)
+- empreinte ONNX par défaut toujours compacte (environ 2.88 MB au total), avec un package mini plus léger (environ 1.87 MB) à venir
 - parfait pour alimenter des fonctionnalités frontend via une inférence backend : assistance à l'écriture en temps réel, suggestions grammaticales et recherche basée sur le lemme

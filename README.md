@@ -172,20 +172,27 @@ npm run benchmark
 
 Results:
 
-- lemma from conjugation: 99/100, accuracy 99.00%, average 16.46 ms
-- noun derive: 99/100, accuracy 99.00%, average 17.33 ms
-- verb derive: 100/100, accuracy 100.00%, average 17.12 ms
-- adjective derive: 100/100, accuracy 100.00%, average 17.34 ms
+- lemma from conjugation: 97/100, accuracy 97.00%, average 22.21 ms
+- noun derive: 100/100, accuracy 100.00%, average 23.46 ms
+- verb derive: 100/100, accuracy 100.00%, average 23.18 ms
+- adjective derive: 100/100, accuracy 100.00%, average 23.49 ms
 
 ## Model Size
 
-- lemma ONNX model: models/small/lemma_type_model.int8.onnx = 0.96 MB
-- derive ONNX model: models/small/derive_form_model.int8.onnx = 0.91 MB
-- total ONNX model size: about 1.87 MB
+- current default (community) lemma ONNX model: models/community/lemma_type_model.int8.onnx = 1.48 MB
+- current default (community) derive ONNX model: models/community/derive_form_model.int8.onnx = 1.40 MB
+- current default total ONNX model size: about 2.88 MB
+
+Mini version note:
+
+- mini lemma ONNX model target: 0.96 MB
+- mini derive ONNX model target: 0.91 MB
+- mini total ONNX model target: about 1.87 MB
+- the mini model package is planned to be published soon.
 
 ## Why It Is Great For Web Frontend Products
 
 - high accuracy for key French morphology tasks
-- low per-request latency (about 16 to 17 ms average in local benchmark)
-- very small ONNX footprint (about 1.87 MB total)
+- low per-request latency (about 22 to 23 ms average in latest local benchmark)
+- current default ONNX footprint is compact (about 2.88 MB total), with a smaller mini model package (about 1.87 MB) coming soon
 - ideal for backend inference powering web frontend features such as live writing assistance, grammar hints, and lemma-aware search
