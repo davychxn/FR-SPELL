@@ -113,6 +113,32 @@ npm run help
 
 This prints a quick parameter reference for `lemma`, `nounDerive`, `adjeDerive`, `verbDerive`, and `derive`, including allowed person/mode/tense values.
 
+## Build Browser Bundle
+
+```bash
+npm run build
+```
+
+Build output:
+
+- `dist/frspell.browser.js` (single JS bundle, attach `window.FrSpell`)
+- `dist/models/community/*.onnx|*.json` (required model and vocab assets)
+
+After build, copy the whole `dist` folder into your frontend project, then use:
+
+```html
+<script src="./dist/frspell.browser.js"></script>
+<script>
+	(async () => {
+		const predictor = await window.FrSpell({
+			modelBasePath: './dist/models/community'
+		});
+		const result = await predictor.lemma('mangeons');
+		console.log(result);
+	})();
+</script>
+```
+
 ## Run Benchmark
 
 1) Prepare checklist JSON files (100 items each):

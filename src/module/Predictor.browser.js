@@ -1,13 +1,10 @@
 /**
- * FR-SPELL core predictor implementation
+ * FR-SPELL browser predictor implementation
  * Author: Davy Chen <davy.chen@163.com>
  * Profile: https://www.linkedin.com/in/davychxn/
  */
 
-import fs from 'node:fs/promises';
-import path from 'node:path';
-import { fileURLToPath } from 'node:url';
-import * as ort from 'onnxruntime-node';
+import * as ort from 'onnxruntime-web';
 
 function argmax(arr) {
   let bestIdx = 0;
@@ -79,16 +76,33 @@ function normalizeEnumToken(value, fallback) {
   return fallback;
 }
 
-const MODULE_DIR = path.dirname(fileURLToPath(import.meta.url));
-const PACKAGE_ROOT = path.resolve(MODULE_DIR, '..', '..');
+function trimTrailingSlash(v) {
+  return String(v || '').replace(/\/+$/, '');
+}
 
-const DEFAULT_MODEL_PATHS = {
-  lemmaModelPath: path.resolve(PACKAGE_ROOT, 'models/community/lemma_type_model.int8.onnx'),
-  lemmaVocabPath: path.resolve(PACKAGE_ROOT, 'models/community/lemma_type_vocab.json'),
-  lemmaLabelsPath: path.resolve(PACKAGE_ROOT, 'models/community/lemma_type_labels.json'),
-  derivativeModelPath: path.resolve(PACKAGE_ROOT, 'models/community/derive_form_model.int8.onnx'),
-  derivativeVocabPath: path.resolve(PACKAGE_ROOT, 'models/community/derive_form_vocab.json'),
-};
+function resolveAssetPath(basePath, assetName) {
+  return `${trimTrailingSlash(basePath)}/${assetName}`;
+}
+
+async function readJsonFromUrl(url) {
+  const response = await fetch(url);
+  if (!response.ok) {
+    throw new Error(`Failed to fetch JSON asset: ${url} (status ${response.status})`);
+  }
+  return response.json();
+}
+
+const DEFAULT_MODEL_BASE_PATH = './models/community';
+
+function getDefaultModelPaths(modelBasePath = DEFAULT_MODEL_BASE_PATH) {
+  return {
+    lemmaModelPath: resolveAssetPath(modelBasePath, 'lemma_type_model.int8.onnx'),
+    lemmaVocabPath: resolveAssetPath(modelBasePath, 'lemma_type_vocab.json'),
+    lemmaLabelsPath: resolveAssetPath(modelBasePath, 'lemma_type_labels.json'),
+    derivativeModelPath: resolveAssetPath(modelBasePath, 'derive_form_model.int8.onnx'),
+    derivativeVocabPath: resolveAssetPath(modelBasePath, 'derive_form_vocab.json'),
+  };
+}
 
 export async function createLemmaTypePredictor({
   modelPath,
@@ -97,17 +111,10 @@ export async function createLemmaTypePredictor({
   maxDecodeLen,
   executionProviders,
 }) {
-  const resolvedModel = path.resolve(modelPath);
-  const resolvedVocab = path.resolve(vocabPath);
-  const resolvedLabels = path.resolve(labelsPath);
-
-  const [vocabRaw, labelsRaw] = await Promise.all([
-    fs.readFile(resolvedVocab, 'utf-8'),
-    fs.readFile(resolvedLabels, 'utf-8'),
+  const [vocab, labels] = await Promise.all([
+    readJsonFromUrl(vocabPath),
+    readJsonFromUrl(labelsPath),
   ]);
-
-  const vocab = JSON.parse(vocabRaw);
-  const labels = JSON.parse(labelsRaw);
 
   const itos = vocab.itos;
   const stoi = toStoi(itos);
@@ -128,8 +135,8 @@ export async function createLemmaTypePredictor({
   const eosId = stoi[EOS];
   const unkId = stoi[UNK];
 
-  const session = await ort.InferenceSession.create(resolvedModel, {
-    executionProviders: executionProviders || ['cpu'],
+  const session = await ort.InferenceSession.create(modelPath, {
+    executionProviders: executionProviders || ['wasm'],
     graphOptimizationLevel: 'all',
   });
   const inputNameSet = new Set(session.inputNames);
@@ -219,7 +226,7 @@ export async function createLemmaTypePredictor({
     lemma,
     predictBatch,
     metadata: {
-      modelPath: resolvedModel,
+      modelPath,
       vocabSize: itos.length,
       decodeLimit,
     },
@@ -232,11 +239,7 @@ export async function createDerivativeTypePredictor({
   maxDecodeLen,
   executionProviders,
 }) {
-  const resolvedModel = path.resolve(modelPath);
-  const resolvedVocab = path.resolve(vocabPath);
-
-  const vocabRaw = await fs.readFile(resolvedVocab, 'utf-8');
-  const vocab = JSON.parse(vocabRaw);
+  const vocab = await readJsonFromUrl(vocabPath);
   const itos = vocab.itos;
   const stoi = toStoi(itos);
 
@@ -254,8 +257,8 @@ export async function createDerivativeTypePredictor({
     throw new Error('Invalid derive vocab: missing special tokens <pad>/<bos>/<eos>/<unk>.');
   }
 
-  const session = await ort.InferenceSession.create(resolvedModel, {
-    executionProviders: executionProviders || ['cpu'],
+  const session = await ort.InferenceSession.create(modelPath, {
+    executionProviders: executionProviders || ['wasm'],
     graphOptimizationLevel: 'all',
   });
   const inputNameSet = new Set(session.inputNames);
@@ -367,7 +370,7 @@ export async function createDerivativeTypePredictor({
     adjeDerive,
     verbDerive,
     metadata: {
-      modelPath: resolvedModel,
+      modelPath,
       vocabSize: itos.length,
       decodeLimit,
     },
@@ -376,15 +379,24 @@ export async function createDerivativeTypePredictor({
 
 export async function FrSpell(options = {}) {
   const {
-    lemmaModelPath = DEFAULT_MODEL_PATHS.lemmaModelPath,
-    lemmaVocabPath = DEFAULT_MODEL_PATHS.lemmaVocabPath,
-    lemmaLabelsPath = DEFAULT_MODEL_PATHS.lemmaLabelsPath,
-    derivativeModelPath = DEFAULT_MODEL_PATHS.derivativeModelPath,
-    derivativeVocabPath = DEFAULT_MODEL_PATHS.derivativeVocabPath,
+    modelBasePath = DEFAULT_MODEL_BASE_PATH,
     lemmaMaxDecodeLen,
     derivativeMaxDecodeLen,
     executionProviders,
+    wasmPaths = 'https://cdn.jsdelivr.net/npm/onnxruntime-web/dist/',
   } = options;
+
+  const defaultPaths = getDefaultModelPaths(modelBasePath);
+
+  const lemmaModelPath = options.lemmaModelPath || defaultPaths.lemmaModelPath;
+  const lemmaVocabPath = options.lemmaVocabPath || defaultPaths.lemmaVocabPath;
+  const lemmaLabelsPath = options.lemmaLabelsPath || defaultPaths.lemmaLabelsPath;
+  const derivativeModelPath = options.derivativeModelPath || defaultPaths.derivativeModelPath;
+  const derivativeVocabPath = options.derivativeVocabPath || defaultPaths.derivativeVocabPath;
+
+  if (wasmPaths && ort.env && ort.env.wasm) {
+    ort.env.wasm.wasmPaths = wasmPaths;
+  }
 
   const [lemmaPredictor, derivativePredictor] = await Promise.all([
     createLemmaTypePredictor({

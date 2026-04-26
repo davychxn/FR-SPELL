@@ -113,6 +113,32 @@ npm run help
 
 该命令会输出参数速查说明，覆盖 `lemma`、`nounDerive`、`adjeDerive`、`verbDerive`、`derive` 及 person/mode/tense 可用值。
 
+## 构建浏览器 Bundle
+
+```bash
+npm run build
+```
+
+构建产物：
+
+- `dist/frspell.browser.js`（单个 JS 文件，挂载 `window.FrSpell`）
+- `dist/models/community/*.onnx|*.json`（模型与词表等必需资源）
+
+构建完成后，将整个 `dist` 文件夹复制到前端项目中，然后使用：
+
+```html
+<script src="./dist/frspell.browser.js"></script>
+<script>
+	(async () => {
+		const predictor = await window.FrSpell({
+			modelBasePath: './dist/models/community'
+		});
+		const result = await predictor.lemma('mangeons');
+		console.log(result);
+	})();
+</script>
+```
+
 ## 运行基准测试
 
 1) 先生成检查清单 JSON（每类 100 条）：

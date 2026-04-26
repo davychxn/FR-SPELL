@@ -113,6 +113,32 @@ npm run help
 
 Cette commande affiche un guide rapide des paramètres pour `lemma`, `nounDerive`, `adjeDerive`, `verbDerive` et `derive`, avec les valeurs autorisées de person/mode/tense.
 
+## Construire le bundle navigateur
+
+```bash
+npm run build
+```
+
+Sortie de build :
+
+- `dist/frspell.browser.js` (fichier JS unique, expose `window.FrSpell`)
+- `dist/models/community/*.onnx|*.json` (ressources modèle et vocabulaire requises)
+
+Après le build, copiez tout le dossier `dist` dans votre projet frontend, puis utilisez :
+
+```html
+<script src="./dist/frspell.browser.js"></script>
+<script>
+	(async () => {
+		const predictor = await window.FrSpell({
+			modelBasePath: './dist/models/community'
+		});
+		const result = await predictor.lemma('mangeons');
+		console.log(result);
+	})();
+</script>
+```
+
 ## Exécuter les benchmarks
 
 1) Générer les fichiers JSON de checklist (100 éléments chacun) :
