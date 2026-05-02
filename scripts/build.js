@@ -5,7 +5,6 @@ import { build } from 'esbuild';
 const rootDir = path.resolve(process.cwd());
 const distDir = path.join(rootDir, 'dist');
 const distModuleDir = path.join(distDir, 'module');
-const distScriptsDir = path.join(distDir, 'scripts');
 const distModelsDir = path.join(distDir, 'models', 'community');
 const sourceModelsDir = path.join(rootDir, 'models', 'community');
 
@@ -13,18 +12,28 @@ async function cleanDist() {
   await fs.rm(distDir, { recursive: true, force: true });
   await fs.mkdir(distModelsDir, { recursive: true });
   await fs.mkdir(distModuleDir, { recursive: true });
-  await fs.mkdir(distScriptsDir, { recursive: true });
 }
 
 async function copyRuntimeFiles() {
   await Promise.all([
     fs.copyFile(path.join(rootDir, 'src', 'index.js'), path.join(distDir, 'index.js')),
-    fs.copyFile(path.join(rootDir, 'src', 'module', 'Predictor.js'), path.join(distModuleDir, 'Predictor.js')),
+    patchAndWritePredictor(
+      path.join(rootDir, 'src', 'module', 'Predictor.js'),
+      path.join(distModuleDir, 'Predictor.js'),
+    ),
   ]);
 }
 
-async function copyPublishScripts() {
-  await fs.copyFile(path.join(rootDir, 'scripts', 'help.js'), path.join(distScriptsDir, 'help.js'));
+async function patchAndWritePredictor(srcPath, destPath) {
+  let src = await fs.readFile(srcPath, 'utf-8');
+  // In source the file lives at src/module/ (two levels from package root).
+  // In the published package it lives at module/ (one level from package root).
+  // Patch the depth so model paths resolve correctly when installed.
+  src = src.replace(
+    "path.resolve(MODULE_DIR, '..', '..')",
+    "path.resolve(MODULE_DIR, '..')",
+  );
+  await fs.writeFile(destPath, src, 'utf-8');
 }
 
 async function bundleBrowserBuild() {
@@ -80,15 +89,11 @@ function buildDistPackageJson(rootPkg) {
       'frspell.browser.js',
       'module',
       'models',
-      'scripts/help.js',
       'README.md',
       'README.cn.md',
       'README.fr.md',
       'LICENSE',
     ],
-    scripts: {
-      help: 'node scripts/help.js',
-    },
     repository: rootPkg.repository,
     keywords: rootPkg.keywords,
     homepage: rootPkg.homepage,
@@ -111,7 +116,6 @@ async function createDistPackageJson() {
 async function main() {
   await cleanDist();
   await copyRuntimeFiles();
-  await copyPublishScripts();
   await bundleBrowserBuild();
   await copyModelAssets();
   await copyPackageDocs();

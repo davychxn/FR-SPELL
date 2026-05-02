@@ -80,7 +80,7 @@ function normalizeEnumToken(value, fallback) {
 }
 
 const MODULE_DIR = path.dirname(fileURLToPath(import.meta.url));
-const PACKAGE_ROOT = path.resolve(MODULE_DIR, '..', '..');
+const PACKAGE_ROOT = path.resolve(MODULE_DIR, '..');
 
 const DEFAULT_MODEL_PATHS = {
   lemmaModelPath: path.resolve(PACKAGE_ROOT, 'models/community/lemma_type_model.int8.onnx'),

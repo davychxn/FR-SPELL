@@ -1,4 +1,4 @@
-import { FrSpell } from '../src/frspell.js';
+import { FrSpell } from '../src/index.js';
 
 const predictor = await FrSpell();
 

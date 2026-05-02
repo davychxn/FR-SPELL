@@ -45,23 +45,6 @@ Sample runtime output:
 { lemma: 'manger', wordType: 'VERB', person: 'FST_PL', mode: 'INDI', tense: 'PRES', output: 'mangeons', confidence: 0.9999864523, timeMs: 4.79 }
 ```
 
-## Browser Usage
-
-Use the browser bundle and model assets included in this package:
-
-```html
-<script src="./frspell.browser.js"></script>
-<script>
-	(async () => {
-		const predictor = await window.FrSpell({
-			modelBasePath: './models/community'
-		});
-		const result = await predictor.lemma('mangeons');
-		console.log(result);
-	})();
-</script>
-```
-
 ## Prediction Parameters
 
 Lemma prediction:
@@ -114,6 +97,14 @@ Note:
 - The original grammar definition file includes more tense names, but this package implementation currently supports only `PRES`, `IMPA`, `FUTU`, `PASS`.
 - For noun/adjective derive calls, `mode` and `tense` are not required in user input.
 
+## Run Test
+
+```bash
+npm test
+```
+
+This executes test/test.js and prints sample prediction outputs.
+
 ## Run Help
 
 ```bash
@@ -122,7 +113,62 @@ npm run help
 
 This prints a quick parameter reference for `lemma`, `nounDerive`, `adjeDerive`, `verbDerive`, and `derive`, including allowed person/mode/tense values.
 
+## Build Browser Bundle
+
+```bash
+npm run build
+```
+
+Build output:
+
+- `dist/frspell.browser.js` (single JS bundle, attach `window.FrSpell`)
+- `dist/models/community/*.onnx|*.json` (required model and vocab assets)
+
+After build, copy the whole `dist` folder into your frontend project, then use:
+
+```html
+<script src="./dist/frspell.browser.js"></script>
+<script>
+	(async () => {
+		const predictor = await window.FrSpell({
+			modelBasePath: './dist/models/community'
+		});
+		const result = await predictor.lemma('mangeons');
+		console.log(result);
+	})();
+</script>
+```
+
+## Run Benchmark
+
+1) Prepare checklist JSON files (100 items each):
+
+```bash
+npm run benchmark:prepare
+```
+
+2) Run all benchmark suites:
+
+```bash
+npm run benchmark
+```
+
+3) Optional single-suite runs:
+
+```bash
+npm run benchmark:lemma
+npm run benchmark:noun
+npm run benchmark:verb
+npm run benchmark:adje
+```
+
 ## Benchmark Result (Latest Local Run)
+
+Benchmark command:
+
+```bash
+npm run benchmark
+```
 
 Results:
 

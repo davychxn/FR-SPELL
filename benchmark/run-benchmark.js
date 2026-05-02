@@ -1,6 +1,6 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
-import { FrSpell } from '../src/frspell.js';
+import { FrSpell } from '../src/index.js';
 
 const ROOT = process.cwd();
 const CHECKLIST_FILES = {

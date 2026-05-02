@@ -45,23 +45,6 @@ Exemple de sortie a l'execution :
 { lemma: 'manger', wordType: 'VERB', person: 'FST_PL', mode: 'INDI', tense: 'PRES', output: 'mangeons', confidence: 0.9999864523, timeMs: 4.79 }
 ```
 
-## Utilisation navigateur
-
-Utilisez directement le bundle navigateur et les ressources modele inclus dans ce package :
-
-```html
-<script src="./frspell.browser.js"></script>
-<script>
-	(async () => {
-		const predictor = await window.FrSpell({
-			modelBasePath: './models/community'
-		});
-		const result = await predictor.lemma('mangeons');
-		console.log(result);
-	})();
-</script>
-```
-
 ## Parametres de prediction
 
 Prediction de lemme :
@@ -114,6 +97,14 @@ Note :
 - Le fichier de definitions d'origine contient plus de noms de temps, mais ce package prend actuellement en charge uniquement `PRES`, `IMPA`, `FUTU`, `PASS`.
 - Pour les appels nom/adjectif, `mode` et `tense` ne sont pas requis dans l'entree utilisateur.
 
+## Exécuter les tests
+
+```bash
+npm test
+```
+
+Cette commande exécute test/test.js et affiche des exemples de prédiction.
+
 ## Afficher l'aide
 
 ```bash
@@ -122,7 +113,62 @@ npm run help
 
 Cette commande affiche un guide rapide des paramètres pour `lemma`, `nounDerive`, `adjeDerive`, `verbDerive` et `derive`, avec les valeurs autorisées de person/mode/tense.
 
+## Construire le bundle navigateur
+
+```bash
+npm run build
+```
+
+Sortie de build :
+
+- `dist/frspell.browser.js` (fichier JS unique, expose `window.FrSpell`)
+- `dist/models/community/*.onnx|*.json` (ressources modèle et vocabulaire requises)
+
+Après le build, copiez tout le dossier `dist` dans votre projet frontend, puis utilisez :
+
+```html
+<script src="./dist/frspell.browser.js"></script>
+<script>
+	(async () => {
+		const predictor = await window.FrSpell({
+			modelBasePath: './dist/models/community'
+		});
+		const result = await predictor.lemma('mangeons');
+		console.log(result);
+	})();
+</script>
+```
+
+## Exécuter les benchmarks
+
+1) Générer les fichiers JSON de checklist (100 éléments chacun) :
+
+```bash
+npm run benchmark:prepare
+```
+
+2) Exécuter toutes les suites de benchmark :
+
+```bash
+npm run benchmark
+```
+
+3) Optionnel : exécuter une suite spécifique :
+
+```bash
+npm run benchmark:lemma
+npm run benchmark:noun
+npm run benchmark:verb
+npm run benchmark:adje
+```
+
 ## Résultats de benchmark (dernier run local)
+
+Commande de benchmark :
+
+```bash
+npm run benchmark
+```
 
 Résultats :
 
