@@ -1,25 +1,26 @@
 {
   "name": "fr-spell",
-  "description": "Lightweight French lemmatization and conjugation. Convert between nouns, verbs, and adjectives using fast, quantized INT8 ONNX models under 2MB.",
   "version": "1.0.3",
+  "description": "Lightweight French lemmatization and conjugation. Convert between nouns, verbs, and adjectives using fast, quantized INT8 ONNX models under 2MB.",
   "type": "module",
-  "main": "./dist/index.js",
+  "main": "./index.js",
   "exports": {
-    ".": "./dist/index.js"
+    ".": "./index.js",
+    "./browser": "./frspell.browser.js"
   },
   "files": [
-    "dist"
+    "index.js",
+    "frspell.browser.js",
+    "module",
+    "models",
+    "scripts/help.js",
+    "README.md",
+    "README.cn.md",
+    "README.fr.md",
+    "LICENSE"
   ],
   "scripts": {
-    "help": "node scripts/help.js",
-    "build": "node scripts/build.js",
-    "test": "node test/test.js",
-    "benchmark:prepare": "node benchmark/generate-checklists.js",
-    "benchmark": "node benchmark/run-benchmark.js",
-    "benchmark:lemma": "node benchmark/run-benchmark.js lemma",
-    "benchmark:noun": "node benchmark/run-benchmark.js noun",
-    "benchmark:verb": "node benchmark/run-benchmark.js verb",
-    "benchmark:adje": "node benchmark/run-benchmark.js adje"
+    "help": "node scripts/help.js"
   },
   "repository": {
     "type": "git",
@@ -51,8 +52,5 @@
   "dependencies": {
     "onnxruntime-node": "^1.24.3",
     "onnxruntime-web": "^1.24.3"
-  },
-  "devDependencies": {
-    "esbuild": "^0.25.10"
   }
 }
