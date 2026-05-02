@@ -64,11 +64,89 @@ async function copyModelAssets() {
   );
 }
 
+const README_OPTS = {
+  'README.md': {
+    sectionsToStrip: ['## Run Test', '## Run Help', '## Build Browser Bundle', '## Run Benchmark'],
+    buildHeading: '## Build Browser Bundle',
+    insertBeforeHeading: '## Prediction Parameters',
+    browserHeading: '## Browser Usage',
+  },
+  'README.cn.md': {
+    sectionsToStrip: ['## 运行测试', '## 查看帮助', '## 构建浏览器 Bundle', '## 运行基准测试'],
+    buildHeading: '## 构建浏览器 Bundle',
+    insertBeforeHeading: '## 预测参数说明',
+    browserHeading: '## 浏览器用法',
+  },
+  'README.fr.md': {
+    sectionsToStrip: ['## Exécuter les tests', "## Afficher l'aide", '## Construire le bundle navigateur', '## Exécuter les benchmarks'],
+    buildHeading: '## Construire le bundle navigateur',
+    insertBeforeHeading: '## Parametres de prediction',
+    browserHeading: '## Utilisation dans le navigateur',
+  },
+};
+
+async function reshapeReadme(srcPath, destPath, opts) {
+  let content = await fs.readFile(srcPath, 'utf-8');
+
+  // Extract browser HTML snippet from the build section before stripping it
+  let browserHtml = '';
+  const buildStart = content.indexOf(`\n${opts.buildHeading}`);
+  if (buildStart !== -1) {
+    const buildEnd = content.indexOf('\n## ', buildStart + 1);
+    const buildContent = buildEnd === -1 ? content.slice(buildStart) : content.slice(buildStart, buildEnd);
+    const htmlBlockStart = buildContent.indexOf('```html');
+    const htmlBlockEnd = buildContent.lastIndexOf('```');
+    if (htmlBlockStart !== -1 && htmlBlockEnd > htmlBlockStart) {
+      browserHtml = buildContent.slice(htmlBlockStart, htmlBlockEnd + 3);
+    }
+  }
+
+  // Strip unwanted sections
+  for (const heading of opts.sectionsToStrip) {
+    const start = content.indexOf(`\n${heading}`);
+    if (start === -1) continue;
+    const nextSection = content.indexOf('\n## ', start + 1);
+    if (nextSection === -1) continue;
+    content = content.slice(0, start) + content.slice(nextSection);
+  }
+
+  // Insert browser section before the prediction parameters section
+  if (browserHtml) {
+    const insertAt = content.indexOf(`\n${opts.insertBeforeHeading}`);
+    if (insertAt !== -1) {
+      const browserSection = `\n\n${opts.browserHeading}\n\n${browserHtml}`;
+      content = content.slice(0, insertAt) + browserSection + content.slice(insertAt);
+    }
+  }
+
+  // Remove benchmark command paragraph (keep only results)
+  const benchmarkCommandPhrases = [
+    'Benchmark command:\n\n```bash\nnpm run benchmark\n```',
+    '基准命令：\n\n```bash\nnpm run benchmark\n```',
+    'Commande de benchmark :\n\n```bash\nnpm run benchmark\n```',
+  ];
+  for (const phrase of benchmarkCommandPhrases) {
+    // Try both LF and CRLF variants
+    for (const p of [phrase, phrase.replace(/\n/g, '\r\n')]) {
+      const idx = content.indexOf(p);
+      if (idx !== -1) {
+        // Also consume the trailing newline(s) left behind
+        let end = idx + p.length;
+        while (end < content.length && (content[end] === '\n' || content[end] === '\r')) end++;
+        content = content.slice(0, idx) + content.slice(end);
+        break;
+      }
+    }
+  }
+
+  await fs.writeFile(destPath, content, 'utf-8');
+}
+
 async function copyPackageDocs() {
   await Promise.all([
-    fs.copyFile(path.join(rootDir, 'README.md'), path.join(distDir, 'README.md')),
-    fs.copyFile(path.join(rootDir, 'README.cn.md'), path.join(distDir, 'README.cn.md')),
-    fs.copyFile(path.join(rootDir, 'README.fr.md'), path.join(distDir, 'README.fr.md')),
+    reshapeReadme(path.join(rootDir, 'README.md'), path.join(distDir, 'README.md'), README_OPTS['README.md']),
+    reshapeReadme(path.join(rootDir, 'README.cn.md'), path.join(distDir, 'README.cn.md'), README_OPTS['README.cn.md']),
+    reshapeReadme(path.join(rootDir, 'README.fr.md'), path.join(distDir, 'README.fr.md'), README_OPTS['README.fr.md']),
     fs.copyFile(path.join(rootDir, 'LICENSE'), path.join(distDir, 'LICENSE')),
   ]);
 }

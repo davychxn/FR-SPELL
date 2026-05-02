@@ -172,10 +172,10 @@ npm run benchmark
 
 Résultats :
 
-- lemme depuis une conjugaison : 97/100, précision 97.00 %, moyenne 22.21 ms
-- dérivation nominale : 100/100, précision 100.00 %, moyenne 23.46 ms
-- dérivation verbale : 100/100, précision 100.00 %, moyenne 23.18 ms
-- dérivation adjectivale : 100/100, précision 100.00 %, moyenne 23.49 ms
+- lemme depuis une conjugaison : 97/100, précision 97.00 %, moyenne 21.97 ms
+- dérivation nominale : 100/100, précision 100.00 %, moyenne 23.19 ms
+- dérivation verbale : 100/100, précision 100.00 %, moyenne 22.93 ms
+- dérivation adjectivale : 100/100, précision 100.00 %, moyenne 23.22 ms
 
 ## Taille des modèles
 

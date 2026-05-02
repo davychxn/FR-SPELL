@@ -45,6 +45,21 @@ console.log(verb);
 { lemma: 'manger', wordType: 'VERB', person: 'FST_PL', mode: 'INDI', tense: 'PRES', output: 'mangeons', confidence: 0.9999864523, timeMs: 4.79 }
 ```
 
+
+## 浏览器用法
+
+```html
+<script src="./dist/frspell.browser.js"></script>
+<script>
+	(async () => {
+		const predictor = await window.FrSpell({
+			modelBasePath: './dist/models/community'
+		});
+		const result = await predictor.lemma('mangeons');
+		console.log(result);
+	})();
+</script>
+```
 ## 预测参数说明
 
 词元预测（lemma）：
@@ -97,85 +112,14 @@ console.log(verb);
 - 参考定义文件中还有更多时态名称，但本包实现目前只支持 `PRES`、`IMPA`、`FUTU`、`PASS`。
 - 对于名词/形容词派生，用户输入时不需要 `mode` 与 `tense`。
 
-## 运行测试
-
-```bash
-npm test
-```
-
-该命令会执行 test/test.js，并输出示例预测结果。
-
-## 查看帮助
-
-```bash
-npm run help
-```
-
-该命令会输出参数速查说明，覆盖 `lemma`、`nounDerive`、`adjeDerive`、`verbDerive`、`derive` 及 person/mode/tense 可用值。
-
-## 构建浏览器 Bundle
-
-```bash
-npm run build
-```
-
-构建产物：
-
-- `dist/frspell.browser.js`（单个 JS 文件，挂载 `window.FrSpell`）
-- `dist/models/community/*.onnx|*.json`（模型与词表等必需资源）
-
-构建完成后，将整个 `dist` 文件夹复制到前端项目中，然后使用：
-
-```html
-<script src="./dist/frspell.browser.js"></script>
-<script>
-	(async () => {
-		const predictor = await window.FrSpell({
-			modelBasePath: './dist/models/community'
-		});
-		const result = await predictor.lemma('mangeons');
-		console.log(result);
-	})();
-</script>
-```
-
-## 运行基准测试
-
-1) 先生成检查清单 JSON（每类 100 条）：
-
-```bash
-npm run benchmark:prepare
-```
-
-2) 运行全部基准测试：
-
-```bash
-npm run benchmark
-```
-
-3) 可选：按单项运行：
-
-```bash
-npm run benchmark:lemma
-npm run benchmark:noun
-npm run benchmark:verb
-npm run benchmark:adje
-```
-
 ## 基准结果（最近一次本地运行）
-
-基准命令：
-
-```bash
-npm run benchmark
-```
 
 结果：
 
-- 由变位预测词元：97/100，准确率 97.00%，平均 22.21 ms
-- 名词派生：100/100，准确率 100.00%，平均 23.46 ms
-- 动词派生：100/100，准确率 100.00%，平均 23.18 ms
-- 形容词派生：100/100，准确率 100.00%，平均 23.49 ms
+- 由变位预测词元：97/100，准确率 97.00%，平均 21.97 ms
+- 名词派生：100/100，准确率 100.00%，平均 23.19 ms
+- 动词派生：100/100，准确率 100.00%，平均 22.93 ms
+- 形容词派生：100/100，准确率 100.00%，平均 23.22 ms
 
 ## 模型体积
 

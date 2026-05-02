@@ -172,10 +172,10 @@ npm run benchmark
 
 Results:
 
-- lemma from conjugation: 97/100, accuracy 97.00%, average 22.21 ms
-- noun derive: 100/100, accuracy 100.00%, average 23.46 ms
-- verb derive: 100/100, accuracy 100.00%, average 23.18 ms
-- adjective derive: 100/100, accuracy 100.00%, average 23.49 ms
+- lemma from conjugation: 97/100, accuracy 97.00%, average 21.97 ms
+- noun derive: 100/100, accuracy 100.00%, average 23.19 ms
+- verb derive: 100/100, accuracy 100.00%, average 22.93 ms
+- adjective derive: 100/100, accuracy 100.00%, average 23.22 ms
 
 ## Model Size
 
