@@ -1,6 +1,6 @@
 {
   "name": "fr-spell",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Lightweight French lemmatization and conjugation. Convert between nouns, verbs, and adjectives using fast, quantized INT8 ONNX models under 2MB.",
   "type": "module",
   "main": "./index.js",

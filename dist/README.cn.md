@@ -49,11 +49,11 @@ console.log(verb);
 ## 浏览器用法
 
 ```html
-<script src="./dist/frspell.browser.js"></script>
+<script src="./frspell.browser.js"></script>
 <script>
 	(async () => {
 		const predictor = await window.FrSpell({
-			modelBasePath: './dist/models/community'
+			modelBasePath: './models/community'
 		});
 		const result = await predictor.lemma('mangeons');
 		console.log(result);
