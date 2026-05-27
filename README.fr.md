@@ -12,9 +12,30 @@ Fonctionnalités prises en charge :
 
 Le package s'appuie sur ONNX Runtime et des modèles INT8 quantifiés pour offrir une grande vitesse avec une empreinte mémoire réduite.
 
+## Comparaison des versions
+
+Une version communautaire gratuite est aussi disponible : [fr-spell](https://www.npmjs.com/package/fr-spell)
+
+| | [fr-spell (community)](https://www.npmjs.com/package/fr-spell) | @cndv3996/fr-spell-mini |
+|---|---|---|
+| **Taille du modele de lemme** | 1.48 MB | 0.96 MB |
+| **Taille du modele de derive** | 1.40 MB | 0.91 MB |
+| **Taille totale des modeles** | ~2.88 MB | ~1.87 MB |
+| **Precision du lemme** | 97% (97/100) | 99% (99/100) |
+| **Precision de derive nominal** | 100% (100/100) | 99% (99/100) |
+| **Precision de derive verbal** | 100% (100/100) | 100% (100/100) |
+| **Precision de derive adjectival** | 100% (100/100) | 100% (100/100) |
+| **Latence moyenne du lemme** | 21.97 ms | 16.23 ms |
+| **Latence moyenne de derive nominal** | 23.19 ms | 17.10 ms |
+| **Latence moyenne de derive verbal** | 22.93 ms | 16.89 ms |
+| **Latence moyenne de derive adjectival** | 23.22 ms | 17.12 ms |
+| **Tarif** | Gratuit | $4.99 |
+| **Paiement** | Non requis | [Acheter le produit](https://coderhome.com/fr/fr-spell-mini-pricing/) |
+
 ## Installation
 
 ```bash
+npm install onnxruntime-node
 npm install fr-spell
 ```
 

@@ -12,9 +12,30 @@ It supports:
 
 The package runs with ONNX Runtime and quantized INT8 models for high speed and small model footprint.
 
+## Version Comparison
+
+A free community version is also available: [fr-spell](https://www.npmjs.com/package/fr-spell)
+
+| | [fr-spell (community)](https://www.npmjs.com/package/fr-spell) | @cndv3996/fr-spell-mini |
+|---|---|---|
+| **Lemma model size** | 1.48 MB | 0.96 MB |
+| **Derive model size** | 1.40 MB | 0.91 MB |
+| **Total model size** | ~2.88 MB | ~1.87 MB |
+| **Lemma accuracy** | 97% (97/100) | 99% (99/100) |
+| **Noun derive accuracy** | 100% (100/100) | 99% (99/100) |
+| **Verb derive accuracy** | 100% (100/100) | 100% (100/100) |
+| **Adjective derive accuracy** | 100% (100/100) | 100% (100/100) |
+| **Lemma avg latency** | 21.97 ms | 16.23 ms |
+| **Noun derive avg latency** | 23.19 ms | 17.10 ms |
+| **Verb derive avg latency** | 22.93 ms | 16.89 ms |
+| **Adjective derive avg latency** | 23.22 ms | 17.12 ms |
+| **Pricing** | Free | $4.99 |
+| **Payment** | No Need | [Purchase The Product](https://coderhome.com/en/fr-spell-mini-pricing/) |
+
 ## Install
 
 ```bash
+npm install onnxruntime-node
 npm install fr-spell
 ```
 

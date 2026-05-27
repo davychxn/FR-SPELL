@@ -1,7 +1,7 @@
 {
   "name": "fr-spell",
   "description": "Lightweight French lemmatization and conjugation. Convert between nouns, verbs, and adjectives using fast, quantized INT8 ONNX models under 2MB.",
-  "version": "1.0.5",
+  "version": "1.0.8",
   "type": "module",
   "main": "./dist/index.js",
   "exports": {
@@ -37,7 +37,7 @@
     "french verb",
     "french adjective"
   ],
-  "homepage": "https://github.com/davychxn/FR-SPELL",
+  "homepage": "https://coderhome.com/",
   "license": "MIT",
   "funding": {
     "type": "patreon",

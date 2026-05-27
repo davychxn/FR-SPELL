@@ -12,9 +12,30 @@ FR-SPELL 是一个用于法语词形还原与派生形态生成的 npm 包。
 
 该包基于 ONNX Runtime 与 INT8 量化模型，兼顾高速度与小体积。
 
+## 版本对比
+
+免费社区版： [fr-spell](https://www.npmjs.com/package/fr-spell)
+
+| | [fr-spell (community)](https://www.npmjs.com/package/fr-spell) | @cndv3996/fr-spell-mini |
+|---|---|---|
+| **词元模型大小** | 1.48 MB | 0.96 MB |
+| **派生模型大小** | 1.40 MB | 0.91 MB |
+| **模型总大小** | ~2.88 MB | ~1.87 MB |
+| **词元准确率** | 97% (97/100) | 99% (99/100) |
+| **名词派生准确率** | 100% (100/100) | 99% (99/100) |
+| **动词派生准确率** | 100% (100/100) | 100% (100/100) |
+| **形容词派生准确率** | 100% (100/100) | 100% (100/100) |
+| **词元平均延迟** | 21.97 ms | 16.23 ms |
+| **名词派生平均延迟** | 23.19 ms | 17.10 ms |
+| **动词派生平均延迟** | 22.93 ms | 16.89 ms |
+| **形容词派生平均延迟** | 23.22 ms | 17.12 ms |
+| **价格** | 免费 | $4.99 |
+| **支付** | 无需支付 | [购买产品](https://coderhome.com/cn/fr-spell-mini-pricing/) |
+
 ## 安装
 
 ```bash
+npm install onnxruntime-node
 npm install fr-spell
 ```
 
